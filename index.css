@@ -1,3 +1,19 @@
+*::selection{
+  color: #000235;
+  background-color: #FFFFFF;
+}
+body{
+  background-color: #d4d1d8;
+  color: #3a3d63;
+  font-family: ;
+  margin: 25px;
+}
+h1{
+  text-align: center;
+}
+input{
+  caret-color: #000235;
+}
 .text-username {
   width: 280px;
   position: relative;
@@ -9,14 +25,14 @@
   transition: all 0.2s;
   padding: 0 2px;
   z-index: 1;
-  color: #b3b3b3;
+  color: #000235;
 }
 .username {
   padding: 0.8rem;
   width: 100%;
   height: 100%;
-  border: 2px solid #2f2c45;
-  background: #272530;
+  border: 2px solid #000235;
+  background: #87839b;
   border-radius: 5px;
   font-size: 18px;
   outline: none;
@@ -26,7 +42,7 @@
 .label::before {
   content: "";
   height: 5px;
-  background: #272530;
+  background: ;
   position: absolute;
   left: 0px;
   top: 10px;
@@ -34,16 +50,17 @@
   z-index: -1;
 }
 .username:focus {
-  border: 2px solid #7e4ccb;
+  border: 2px solid #3a3d63;
 }
 .username:focus + .label,
 .filled {
   top: -10px;
-  color: #7e4ccb;
+  color: #000235;
   font-size: 14px;
 }
 .username::placeholder {
   font-size: 16px;
+  color: #d4d1d8;
   opacity: 0;
   transition: all 0.3s;
 }
