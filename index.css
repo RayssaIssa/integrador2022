@@ -21,8 +21,8 @@ input{
 .label {
   position: absolute;
   left: 10px;
-  top: 14px;
-  transition: all 0.5s;
+  top: 20px;
+  transition: all 0.2s;
   padding: 0 2px;
   z-index: 1;
   color: #000235;
