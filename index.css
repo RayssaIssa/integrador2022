@@ -3,8 +3,8 @@
   background-color: #FFFFFF;
 }
 body{
-  background-color: #d4d1d8;
-  color: #3a3d63;
+  background-color: #87715a;
+  color: #603b2c;
   font-family: ;
   margin: 25px;
 }
@@ -37,7 +37,7 @@ input{
   font-size: 18px;
   outline: none;
   transition: all 0.3s;
-  color: black;
+  color: #fff;
 }
 .label::before {
   content: "";
