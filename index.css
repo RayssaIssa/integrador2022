@@ -20,9 +20,9 @@ input{
 }
 .label {
   position: absolute;
-  left: 20px;
+  left: 10px;
   top: 14px;
-  transition: all 0.2s;
+  transition: all 0.5s;
   padding: 0 2px;
   z-index: 1;
   color: #000235;
