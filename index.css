@@ -21,7 +21,7 @@ input{
 .label {
   position: absolute;
   left: 10px;
-  top: 20px;
+  top: 15px;
   transition: all 0.2s;
   padding: 0 2px;
   z-index: 1;
@@ -37,7 +37,7 @@ input{
   font-size: 18px;
   outline: none;
   transition: all 0.3s;
-  color: #fff;
+  color: black;
 }
 .label::before {
   content: "";
