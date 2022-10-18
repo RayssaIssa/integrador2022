@@ -3,8 +3,8 @@
   background-color: #FFFFFF;
 }
 body{
-  background-color: #87715a;
-  color: #603b2c;
+  background-color: #d1d6cd;
+  color: #460f21;
   font-family: ;
   margin: 25px;
 }
@@ -12,7 +12,7 @@ h1{
   text-align: center;
 }
 input{
-  caret-color: #000235;
+  caret-color: #460f21;
 }
 .text-username {
   width: 280px;
@@ -25,7 +25,7 @@ input{
   transition: all 0.2s;
   padding: 0 2px;
   z-index: 1;
-  color: #000235;
+  color: #603b2c;
 }
 .username {
   padding: 0.8rem;
@@ -37,7 +37,7 @@ input{
   font-size: 18px;
   outline: none;
   transition: all 0.3s;
-  color: #fff;
+  color: #603b2c;
 }
 .label::before {
   content: "";
