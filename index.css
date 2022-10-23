@@ -9,25 +9,25 @@ body{
   margin: 25px;
 }
 .SE{
-  border-right: 5px solid green;
-  border-bottom: 5px solid green;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
   position: absolute;
   width: 300px;
   height: 200px;
   margin-left: 300px;
 }
 .SM{
-  border-right: 5px solid grey;
-  border-bottom: 5px solid grey;
-  border-left: 5px solid grey;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-left: 5px solid black;
   position: absolute;
   width: 400px;
   height: 200px;
   margin-left: 600px;
 }
 .SD{
-  border-left: 5px solid yellow;
-  border-bottom: 5px solid yellow;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
   position: absolute;
   width: 400px;
   height: 200px;
@@ -44,7 +44,7 @@ body{
 }
 */
 .MM{
-  border: 5px solid purple;
+  border: 5px solid black;
   position: absolute;
   width: 400px;
   height: 200px;
@@ -52,9 +52,9 @@ body{
   margin-left: 600px;
 }
 .MD{
-  border-left: 5px solid hotpink;
-  border-bottom: 5px solid hotpink;
-  border-top: 5px solid hotpink;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
   position: absolute;
   width: 400px;
   height: 200px;
@@ -71,9 +71,9 @@ body{
   margin-left: 300px;
 }
 .IM{
-  border-left: 5px solid red;
-  border-top: 5px solid red;
-  border-right: 5px solid red;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
   position: absolute;
   width: 400px;
   height: 200px;
@@ -81,8 +81,8 @@ body{
   margin-left: 600px;
 }
 .ID{
-  border-left: 5px solid blue;
-  border-top: 5px solid blue;
+  border-left: 5px solid black;
+  border-top: 5px solid black;
   position: absolute;
   margin-right: 300px;
   margin-bottom: 200px;
