@@ -2,7 +2,7 @@ jogador1 = [localStorage.getItem('user1_nome'), 6];
 jogador2 = [localStorage.getItem('user2_nome'), 6];
 
 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
-document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome') + "||| VIDAS: " + jogador2[1];
+document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
 
 
 matriz_jogo = ['','','','','','','','',''];
