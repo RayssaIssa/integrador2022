@@ -1,4 +1,4 @@
 function ativar(){
-  localStorage.setItem('Usuário_1',document.getElementById('user').value);
-  localStorage.setItem('Usuário_2',document.getElementById('user2').value);
+  localStorage.setItem('user1_nome', document.getElementById('user').value);
+  localStorage.setItem('user2_nome',document.getElementById('user2').value);
 };
