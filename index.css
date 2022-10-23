@@ -33,16 +33,16 @@ body{
   height: 200px;
   margin-left: 1005px;
 }
-/*
+
 .ME{
-  border-right: 5px solid violet;
-  border-top: 5px solid violet;
-  border-bottom: 5px solid violet;
+  border-right: 5px solid black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   position: relative;
   width: 200px;
   height: 500px;
 }
-*/
+
 .MM{
   border: 5px solid black;
   position: absolute;
