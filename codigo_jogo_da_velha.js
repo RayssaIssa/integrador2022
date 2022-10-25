@@ -69,13 +69,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[3] != '') && (matriz_jogo[4] != '') && (matriz_jogo[5]!= '') && (matriz_jogo[3] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[5])){
@@ -108,13 +108,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!");
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[6] != '') && (matriz_jogo[7] != '') && (matriz_jogo[8] != '') && (matriz_jogo[6] == matriz_jogo[7]) && (matriz_jogo[7]== matriz_jogo[8])){
@@ -147,13 +147,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[0] != '') && (matriz_jogo[3] != '') && (matriz_jogo[6]!= '') && (matriz_jogo[0] == matriz_jogo[3]) && (matriz_jogo[3]== matriz_jogo[6])){
@@ -186,13 +186,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[1] != '') && (matriz_jogo[4] != '') && (matriz_jogo[7]!= '') && (matriz_jogo[1] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[7])){
@@ -225,13 +225,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[2] != '') && (matriz_jogo[5] != '') && (matriz_jogo[8]!= '') && (matriz_jogo[2] == matriz_jogo[5]) && (matriz_jogo[5]== matriz_jogo[8])){
@@ -264,13 +264,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[0] != '') && (matriz_jogo[4] != '') && (matriz_jogo[8]!= '') && (matriz_jogo[0] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[8])){
@@ -303,13 +303,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[2] != '') && (matriz_jogo[4] != '') && (matriz_jogo[6]!= '') && (matriz_jogo[2] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[6])){
@@ -342,13 +342,13 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
             
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         }else if ((matriz_jogo[0] != '')&&(matriz_jogo[1] != '')&&(matriz_jogo[2] != '')&&(matriz_jogo[3] != '')&&(matriz_jogo[4] != '')&&(matriz_jogo[5] != '')&&(matriz_jogo[6] != '')&&(matriz_jogo[7] != '')&&(matriz_jogo[8] != '')){
@@ -375,13 +375,13 @@ function jogar(identificador){
             document.getElementById("ID").innerHTML = "";
 
             if ((jogador1[1]==0) && (jogador2[1] == 0)){
-                alert("EMPATE!!! CORTEM-LHES A CABEÇA!!!!")
+                localStorage.setItem('Vencedor', 'Empate');
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador1[1] == 0){
-                alert(localStorage.getItem('user2_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user2_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             }else if (jogador2[1] == 0){
-                alert(localStorage.getItem('user1_nome').toUpperCase() + " GANHOU!!!!!");
+                localStorage.setItem('Vencedor', localStorage.getItem('user1_nome'));
                 window.location.replace('pagina_de_vencedor.html')
             };
         };
