@@ -19,8 +19,7 @@ if (jogadas_para_pergunta % 2 == 0){
 
 function jogar(identificador){
 
-    document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0])
-
+    console.log(vez[0]);
     console.log(jogadas_para_pergunta);
     console.log(paridade);
 
@@ -424,8 +423,9 @@ function jogar(identificador){
         console.log(matriz_jogo);
         if (vez[0] == "user2_nome"){
             vez[0] = "user1_nome";
+            document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
         }else{
             vez[0] = "user2_nome";
+            document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
         };
-
 };
