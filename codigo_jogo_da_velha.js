@@ -6,38 +6,74 @@ document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2
 
 
 matriz_jogo = ['','','','','','','','',''];
-vez = ['user1_nome'];
+const vez = ['user1_nome'];
+pode_jogar = true;
 
+jogadas_para_pergunta = Math.floor(Math.random() * 7);
+var paridade = '';
+if (jogadas_para_pergunta % 2 == 0){
+    paridade = "par";
+}else{
+    paridade = "impar"
+}
 
 function jogar(identificador){
 
+    document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0])
+
+    console.log(jogadas_para_pergunta);
+    console.log(paridade);
+
     if (document.getElementById(identificador).innerHTML == ''){
-        
-        if (vez[0] == 'user1_nome'){
-            document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png'></img>";
-        }else{
-            document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png'></img>"
-        };
+
+        if (jogadas_para_pergunta == 0){
+            resposta_aleatoria = prompt("Olá! Eu sou uma pergunta aleatória!");
     
-        if (identificador == "SE"){
-            matriz_jogo[0] = vez[0];
-        }else if (identificador == "SM"){
-            matriz_jogo[1] = vez[0];
-        }else if (identificador == "SD"){
-            matriz_jogo[2] = vez[0];
-        }else if (identificador == "ME"){
-            matriz_jogo[3] = vez[0];
-        }else if (identificador == "MM"){
-            matriz_jogo[4] = vez[0];
-        }else if (identificador == "MD"){
-            matriz_jogo[5] = vez[0];
-        }else if (identificador == "IE"){
-            matriz_jogo[6] = vez[0];
-        }else if (identificador == "IM"){
-            matriz_jogo[7] = vez[0];
-        }else if (identificador == "ID"){
-            matriz_jogo[8] = vez[0];
-        };
+            if (paridade == "par"){
+                jogadas_para_pergunta = Math.floor(Math.random() * 4) * 2;
+            }else{
+                jogadas_para_pergunta = Math.floor(Math.random() * 4) * 2 + 1;
+            };
+
+            if (resposta_aleatoria.toLowerCase() != "certo"){
+                pode_jogar = false;
+            };
+        }else{
+            jogadas_para_pergunta -= 1;
+            pode_jogar = true;
+        }
+        
+        if (pode_jogar == true){
+            if (vez[0] == 'user1_nome'){
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png'></img>";
+            }else{
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png'></img>"
+            };
+            
+        
+            if (identificador == "SE"){
+                matriz_jogo[0] = vez[0];
+            }else if (identificador == "SM"){
+                matriz_jogo[1] = vez[0];
+            }else if (identificador == "SD"){
+                matriz_jogo[2] = vez[0];
+            }else if (identificador == "ME"){
+                matriz_jogo[3] = vez[0];
+            }else if (identificador == "MM"){
+                matriz_jogo[4] = vez[0];
+            }else if (identificador == "MD"){
+                matriz_jogo[5] = vez[0];
+            }else if (identificador == "IE"){
+                matriz_jogo[6] = vez[0];
+            }else if (identificador == "IM"){
+                matriz_jogo[7] = vez[0];
+            }else if (identificador == "ID"){
+                matriz_jogo[8] = vez[0];
+            };
+        }
+    }else{
+        alert("Erro: Essa casa já está ocupada")
+    };
 
         if ((matriz_jogo[0] != '') && (matriz_jogo[1] != '') && (matriz_jogo[2]!= '') && (matriz_jogo[0] == matriz_jogo[1]) && (matriz_jogo[1]== matriz_jogo[2])){
             if (vez[0] == 'user1_nome'){
@@ -392,8 +428,4 @@ function jogar(identificador){
             vez[0] = "user2_nome";
         };
 
-
-    }else{
-        alert('Erro: Essa casa já está ocupada')
-    };
 };
