@@ -9,13 +9,8 @@ matriz_jogo = ['','','','','','','','',''];
 const vez = ['user1_nome'];
 pode_jogar = true;
 
-jogadas_para_pergunta = Math.floor(Math.random() * 7);
+jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
 var paridade = '';
-if (jogadas_para_pergunta % 2 == 0){
-    paridade = "par";
-}else{
-    paridade = "impar"
-}
 
 function jogar(identificador){
 
@@ -27,13 +22,7 @@ function jogar(identificador){
 
         if (jogadas_para_pergunta == 0){
             resposta_aleatoria = prompt("Olá! Eu sou uma pergunta aleatória!");
-    
-            if (paridade == "par"){
-                jogadas_para_pergunta = Math.floor(Math.random() * 4) * 2;
-            }else{
-                jogadas_para_pergunta = Math.floor(Math.random() * 4) * 2 + 1;
-            };
-
+            jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
             if (resposta_aleatoria.toLowerCase() != "certo"){
                 pode_jogar = false;
             };
