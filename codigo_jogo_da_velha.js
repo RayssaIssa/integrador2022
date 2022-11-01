@@ -1,8 +1,8 @@
-jogador1 = [localStorage.getItem('user1_nome'), 6];
-jogador2 = [localStorage.getItem('user2_nome'), 6];
+jogador1 = [localStorage.getItem('user1_nome'), 6, 0];
+jogador2 = [localStorage.getItem('user2_nome'), 6, 0];
 
-document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
-document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| Acertos: " + jogador1[2];
+document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| Acertos: " + jogador2[2];
 
 
 matriz_jogo = ['','','','','','','','',''];
@@ -25,7 +25,13 @@ function jogar(identificador){
             jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
             if (resposta_aleatoria.toLowerCase() != "certo"){
                 pode_jogar = false;
-            };
+            }else{
+                if (vez[0] == "user1_nome"){
+                    jogador1[2] += 1;
+                }else{
+                    jogador2[2] += 1;
+                }
+            }
         }else{
             jogadas_para_pergunta -= 1;
             pode_jogar = true;
@@ -33,9 +39,9 @@ function jogar(identificador){
         
         if (pode_jogar == true){
             if (vez[0] == 'user1_nome'){
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png'></img>";
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png' width="300px" height="200px"></img>";
             }else{
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png'></img>"
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png' width="300px" height="200px"></img>";
             };
             
         
