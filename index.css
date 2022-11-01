@@ -1,11 +1,11 @@
 *::selection{
-    color: #000235;
+    color: #5D0C1D;
     background-color: #FFFFFF;
 }
-
+/*tá dando erro aqui na cor do background, dps resolvo (-Nath)*/
 body{
-    background-color: #d4d1d8;
-    color: #3a3d63;
+    background-color: #CCB38D;
+    color: #5D0C1D;
     margin: 25px;
 }
 
@@ -15,6 +15,50 @@ body{
     margin-left:50px;
     margin-top:50px;
 }
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+.navbar ol{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	justify-content: center;
+	align-items: center;
+	top: 0px;
+	cursor: pointer;
+	background-color: #5D0C1D;
+	font-size: 19px;
+}
+/*bordas da barra de navegação*/
+.navbar{
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.nav-list{
+	width: 100%;
+    display: flex;
+}
+.navbar li{
+	float: left;
+}
+.nav-list li {
+    list-style: none;
+    padding: 20px;
+}
+.navbar li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.navbar li a:hover{
+	background-color: #430A20;
+}
+
+
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 
 /* ----------------------- Footer ----------------------- */
 
