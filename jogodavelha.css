@@ -1,0 +1,90 @@
+#SE{
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-left: 300px;
+}
+
+#SM{
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-left: 600px;
+}
+
+#SD{
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-left: 905px;
+}
+  
+#ME{
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    margin-left:300px;
+    margin-top:200px;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+}
+  
+#MM{
+    border: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 600px;
+}
+
+#MD{
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-top: 200px;
+    margin-left: 905px;
+}
+
+#IE{
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-top: 405px;
+    margin-left: 300px;
+}
+
+#IM{
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    margin-top: 405px;
+    margin-left: 600px;
+}
+
+#ID{
+    border-left: 5px solid black;
+    border-top: 5px solid black;
+    position: absolute;
+    margin-bottom: 200px;
+    width: 300px;
+    height: 200px;
+    margin-top: 405px;
+    margin-left: 905px;
+}
