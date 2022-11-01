@@ -1,6 +1,59 @@
+body{
+    background-color: #CCB38D;
+}
+h1{
+    color: #5D0C1D;
+}
+
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+.navbar ol{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	position: sticky;
+	justify-content: center;
+	align-items: center;
+	top: 0px;
+	cursor: pointer;
+	background-color: #5D0C1D;
+	font-size: 19px;
+}
+/*bordas da barra de navegação*/
+.navbar{
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.nav-list{
+	width: 100%;
+    display: flex;
+}
+.navbar li{
+	float: left;
+}
+.nav-list li {
+    list-style: none;
+    padding: 20px;
+}
+.navbar li a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.navbar li a:hover{
+	background-color: #430A20;
+}
+
+
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+
+
 #SE{
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
+    border-right: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -8,9 +61,9 @@
 }
 
 #SM{
-    border-right: 5px solid black;
-    border-bottom: 5px solid black;
-    border-left: 5px solid black;
+    border-right: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
+    border-left: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -18,8 +71,8 @@
 }
 
 #SD{
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
+    border-left: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -27,9 +80,9 @@
 }
   
 #ME{
-    border-right: 5px solid black;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
+    border-right: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
     margin-left:300px;
     margin-top:200px;
     position: absolute;
@@ -38,7 +91,7 @@
 }
   
 #MM{
-    border: 5px solid black;
+    border: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -47,9 +100,9 @@
 }
 
 #MD{
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
+    border-left: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -58,8 +111,8 @@
 }
 
 #IE{
-    border-right: 5px solid black;
-    border-top: 5px solid black;
+    border-right: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -68,9 +121,9 @@
 }
 
 #IM{
-    border-left: 5px solid black;
-    border-top: 5px solid black;
-    border-right: 5px solid black;
+    border-left: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
+    border-right: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -79,8 +132,8 @@
 }
 
 #ID{
-    border-left: 5px solid black;
-    border-top: 5px solid black;
+    border-left: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
     position: absolute;
     margin-bottom: 200px;
     width: 300px;
