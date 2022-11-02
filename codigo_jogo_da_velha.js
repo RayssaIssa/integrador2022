@@ -1,8 +1,8 @@
 jogador1 = [localStorage.getItem('user1_nome'), 6, 0];
 jogador2 = [localStorage.getItem('user2_nome'), 6, 0];
 
-document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| Acertos: " + jogador1[2];
-document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| Acertos: " + jogador2[2];
+document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
+document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
 
 
 matriz_jogo = ['','','','','','','','',''];
@@ -28,10 +28,14 @@ function jogar(identificador){
             }else{
                 if (vez[0] == "user1_nome"){
                     jogador1[2] += 1;
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
+                    pode_jogar = true;
                 }else{
                     jogador2[2] += 1;
-                }
-            }
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
+                    pode_jogar = true;
+                };
+            };
         }else{
             jogadas_para_pergunta -= 1;
             pode_jogar = true;
@@ -72,19 +76,19 @@ function jogar(identificador){
         if ((matriz_jogo[0] != '') && (matriz_jogo[1] != '') && (matriz_jogo[2]!= '') && (matriz_jogo[0] == matriz_jogo[1]) && (matriz_jogo[1]== matriz_jogo[2])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -111,19 +115,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[3] != '') && (matriz_jogo[4] != '') && (matriz_jogo[5]!= '') && (matriz_jogo[3] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[5])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -150,19 +154,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[6] != '') && (matriz_jogo[7] != '') && (matriz_jogo[8] != '') && (matriz_jogo[6] == matriz_jogo[7]) && (matriz_jogo[7]== matriz_jogo[8])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -189,19 +193,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[0] != '') && (matriz_jogo[3] != '') && (matriz_jogo[6]!= '') && (matriz_jogo[0] == matriz_jogo[3]) && (matriz_jogo[3]== matriz_jogo[6])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -228,19 +232,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[1] != '') && (matriz_jogo[4] != '') && (matriz_jogo[7]!= '') && (matriz_jogo[1] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[7])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -267,19 +271,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[2] != '') && (matriz_jogo[5] != '') && (matriz_jogo[8]!= '') && (matriz_jogo[2] == matriz_jogo[5]) && (matriz_jogo[5]== matriz_jogo[8])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -306,19 +310,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[0] != '') && (matriz_jogo[4] != '') && (matriz_jogo[8]!= '') && (matriz_jogo[0] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[8])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -345,19 +349,19 @@ function jogar(identificador){
         }else if ((matriz_jogo[2] != '') && (matriz_jogo[4] != '') && (matriz_jogo[6]!= '') && (matriz_jogo[2] == matriz_jogo[4]) && (matriz_jogo[4]== matriz_jogo[6])){
             if (vez[0] == 'user1_nome'){
                 jogador2[1] -= 1;
-                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
             }else {
                 jogador1[1] -= 1;
-                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
             };
             resposta = prompt('Olá, isso é uma pergunta:');
             if (resposta.toLowerCase() != "certo"){
                 if (vez[0] == 'user1_nome'){
                     jogador1[1] -= 1;
-                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+                    document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
                 }else{
                     jogador2[1] -= 1;
-                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
+                    document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
                 }
             };
             matriz_jogo = ['','','','','','','','',''];
@@ -391,7 +395,7 @@ function jogar(identificador){
                 jogador2[1] -= 1;
             };
             document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
-            document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1];
+            document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
 
             matriz_jogo = ['','','','','','','','',''];
             document.getElementById("SE").innerHTML = "";
