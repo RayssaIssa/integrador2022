@@ -394,9 +394,8 @@ function jogar(identificador){
             if (resposta.toLowerCase() != "certo"){
                 jogador2[1] -= 1;
             };
-            document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1];
-            document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador1[2];
-
+            document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "||| VIDAS: " + jogador2[1] + "||| ACERTOS: " + jogador2[2];
+            document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "||| VIDAS: " + jogador1[1] + "||| ACERTOS: " + jogador[2];
             matriz_jogo = ['','','','','','','','',''];
             document.getElementById("SE").innerHTML = "";
             document.getElementById("SM").innerHTML = "";
