@@ -39,9 +39,9 @@ function jogar(identificador){
         
         if (pode_jogar == true){
             if (vez[0] == 'user1_nome'){
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png' width="300px" height="200px"></img>";
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png' width='300px' height='200px'></img>";
             }else{
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png' width="300px" height="200px"></img>";
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png' width='300px' height='200px'></img>";
             };
             
         
