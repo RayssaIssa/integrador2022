@@ -21,7 +21,7 @@ h1{
     -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
-/*------------para inserir usuário------------*/
+/*-------------para inserir usuário------------*/
 #login{
 	display: flex;
 	align-items: left;
