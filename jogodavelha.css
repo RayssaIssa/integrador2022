@@ -47,18 +47,18 @@ li a:hover {
 
 
 #SE{
-    border-right: 5px solid blue;
-    border-bottom: 5px solid blue;
+    border-right: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
-    margin-left: 45px;
+    margin-left: 465px;
 }
 
 #SM{
-    border-right: 5px solid yellow;
-    border-bottom: 5px solid yellow;
-    border-left: 5px solid yellow;
+    border-right: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
+    border-left: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -66,8 +66,8 @@ li a:hover {
 }
 
 #SD{
-    border-left: 5px solid red;
-    border-bottom: 5px solid red;
+    border-left: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -75,18 +75,20 @@ li a:hover {
 }
   
 #ME{
-    border-right: 5px solid green;
-    border-top: 5px solid green;
-    border-bottom: 5px solid green;
+    border-right: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
     margin-left:300px;
     margin-top:200px;
     position: absolute;
     width: 300px;
     height: 200px;
+    margin-left:465px;
+
 }
   
 #MM{
-    border: 5px solid pink;
+    border: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -95,9 +97,9 @@ li a:hover {
 }
 
 #MD{
-    border-left: 5px solid purple;
-    border-bottom: 5px solid purple;
-    border-top: 5px solid purple;
+    border-left: 5px solid #5D0C1D;
+    border-bottom: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -106,19 +108,19 @@ li a:hover {
 }
 
 #IE{
-    border-right: 5px solid brown;
-    border-top: 5px solid brown;
+    border-right: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
     margin-top: 405px;
-    margin-left: 300px;
+    margin-left: 465px;
 }
 
 #IM{
-    border-left: 5px solid orange;
-    border-top: 5px solid orange;
-    border-right: 5px solid orange;
+    border-left: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
+    border-right: 5px solid #5D0C1D;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -127,8 +129,8 @@ li a:hover {
 }
 
 #ID{
-    border-left: 5px solid #06eaff;
-    border-top: 5px solid #06eaff;
+    border-left: 5px solid #5D0C1D;
+    border-top: 5px solid #5D0C1D;
     position: absolute;
     margin-bottom: 200px;
     width: 300px;
