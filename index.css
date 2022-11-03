@@ -68,7 +68,7 @@ h1{
 }
 /* ------------- Escolher avatar ----------------*/
 .avatar img{
-    border: 2px solid;
+    border: 2px solid #5D0C1D;
     border-radius: 100%;
 }
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
