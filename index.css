@@ -66,6 +66,11 @@ h1{
 
   color: #5D0C1D;
 }
+/* ------------- Escolher avatar ----------------*/
+.avatar img{
+    border: 2px solid;
+    border-radius: 100%;
+}
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 header {
     background-color: #5D0C1D;
