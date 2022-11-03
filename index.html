@@ -6,19 +6,25 @@
 	<link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
 	<nav>
   		<ul>
     		<li><a id="homepage"  href="index.html">Página inicial</a></li>
     		<li><a id="mute"  href="#">Mutar</a></li>
   		</ul>
-	</nav><br>
+	</nav>
+    </header><br>
 	<h1>Guilhotinados</h1>
-	<form action="jogadavelha.html">	
+	<form action="jogadavelha.html" class="card">
+		<div id="login" class="card-head">	
 		<div class="text-username">
-			<input type="text" id="user" class="username" autocomplete="off" placeholder="Insira o usuário 1" required>
-			<label class="label" for="username">Nome do Usúario 1</label>
-			<input type="text" id="user2" class="username" autocomplete="off" placeholder="Insira o usuário 2" required>
-			<label class="label" for="username">Nome do Usúario 2</label>
+			<div class="text-username-area">
+				<input type="text" id="user" class="username" autocomplete="off" placeholder="Insira o Jogador 1" required>
+				<label class="label" for="username">Nome do Jogador 1</label>
+				<input type="text" id="user2" class="username" autocomplete="off" placeholder="Insira o Jogador 2" required>
+				<label class="label" for="username">Nome do Jogador 2</label>
+			</div>
+		</div>
 		</div><br>		
 		<h3>Selecione seu personagem:</h3>
 		<img src="https://w7.pngwing.com/pngs/905/599/png-transparent-graphy-king.png" width="200px">            
