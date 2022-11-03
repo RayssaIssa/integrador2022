@@ -1,62 +1,105 @@
 *::selection{
     color: #5D0C1D;
-    background-color: #FFFFFF;
-}
-/*tá dando erro aqui na cor do background, dps resolvo (-Nath)*/
-body{
-    background-color: #CCB38D;
-    color: #5D0C1D;
-    margin: 25px;
+    background-color: #FFFF;
 }
 
 .imagem{
-    width:100px;
-    height:20px;
+    width:200px;
+    height:120px;
     margin-left:50px;
     margin-top:50px;
 }
-/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
-.navbar ol{
-	list-style: none;
+h1{
+  align-items: center;
+}
+/*------------para inserir usuário------------*/
+#login{
 	display: flex;
-	margin: 0;
-	padding: 0;
-	position: sticky;
-	justify-content: center;
-	align-items: center;
-	top: 0px;
-	cursor: pointer;
-	background-color: #5D0C1D;
-	font-size: 19px;
+	align-items: left;
+	justify-content: left;
 }
-/*bordas da barra de navegação*/
-.navbar{
-    margin-right: -10px;
-    margin-top: -10px;
-    margin-left: -10px;
-}
-.nav-list{
-	width: 100%;
-    display: flex;
-}
-.navbar li{
-	float: left;
-}
-.nav-list li {
-    list-style: none;
-    padding: 20px;
-}
-.navbar li a{
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-.navbar li a:hover{
-	background-color: #430A20;
-}
+.card{
+	opacity: 0.9;
+	padding: 20px;
+	border-radius: 2px;
 
+}
+.card-header{
+	padding-bottom: 50px;
+	opacity: 0.8;
+	color: #5D0C1D;
+}
+.card-header after {
+
+  content: "";
+
+  height: 1px;
+
+  background-color: yellow;
+
+  display: flex;
+
+}
+.text-username label{
+	color: #5D0C1D;
+	font-size: 12px;
+	opacity: 0.8;
+	font-size: 15px;
+}
+.text-username-area{
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+}
+.text-username-area input {
+  margin-top: 10px;
+
+  padding:0 5px;
+
+  background-color: transparent;
+
+  border:none;
+
+  border-bottom: 1px solid #430A20;
+
+  outline: none;
+
+  color: #5D0C1D;
+}
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+header {
+    background-color: #5D0C1D;
+    width: 100%;
+    height: 70px;
+}
+  
+ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: center; 
+    margin: 0px;
+}
+  
+  
+li {
+    margin: 20px;
+    font-family: Arial;
+}
+  
+#title {
+    margin-right: auto;
+}
+  
+  
+li a {
+   color: #e4c99f;
+   text-decoration: none; 
+}
+  
+li a:hover {
+    text-decoration: underline;
+}
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 
@@ -67,6 +110,7 @@ body{
 }
 html {
   font-size: 100%;
+  color: #5D0C1D;/*Botei cor nas palavras*/
 }
 body {
   font-family: acumin-pro, system-ui, sans-serif;
@@ -74,7 +118,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-size: 14px;
-  background-color: #f4f4f4;
+  background-color: #e4c99f; /*como tá como 'body' mudei a cor da pág principal, e não do footer*/
   align-items: start;
   min-height: 100vh;
 }
