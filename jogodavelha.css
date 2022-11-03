@@ -1,88 +1,83 @@
 body{
-    background-color: #CCB38D;
+    background-color: #e4c99f;
+    font-family: acumin-pro, system-ui, sans-serif;
+    margin: 0px;
 }
 h1{
     color: #5D0C1D;
 }
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
-.navbar ol{
-	list-style: none;
-	display: flex;
-	margin: 0;
-	padding: 0;
-	position: sticky;
-	justify-content: center;
-	align-items: center;
-	top: 0px;
-	cursor: pointer;
-	background-color: #5D0C1D;
-	font-size: 19px;
-}
-/*bordas da barra de navegação*/
-.navbar{
-    margin-right: -10px;
-    margin-top: -10px;
-    margin-left: -10px;
-}
-.nav-list{
-	width: 100%;
-    display: flex;
-}
-.navbar li{
-	float: left;
-}
-.nav-list li {
-    list-style: none;
-    padding: 20px;
-}
-.navbar li a{
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-.navbar li a:hover{
-	background-color: #430A20;
-}
+header {
+    background-color: #5D0C1D;
+    width: 100%;
+    height: 70px;
 
+}
+  
+ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: center; 
+    margin: 0px;
+}
+  
+  
+li {
+    margin: 20px;
+    font-family: Arial;
+}
+  
+#title {
+    margin-right: auto;
+}
+  
+  
+li a {
+   color: #e4c99f;
+   text-decoration: none; 
+}
+  
+li a:hover {
+    text-decoration: underline;
+}
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 
 
 #SE{
-    border-right: 5px solid #5D0C1D;
-    border-bottom: 5px solid #5D0C1D;
+    border-right: 5px solid blue;
+    border-bottom: 5px solid blue;
     position: absolute;
     width: 300px;
     height: 200px;
-    margin-left: 300px;
+    margin-left: 45px;
 }
 
 #SM{
-    border-right: 5px solid #5D0C1D;
-    border-bottom: 5px solid #5D0C1D;
-    border-left: 5px solid #5D0C1D;
+    border-right: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    border-left: 5px solid yellow;
     position: absolute;
     width: 300px;
     height: 200px;
-    margin-left: 600px;
+    margin-left: 765px;
 }
 
 #SD{
-    border-left: 5px solid #5D0C1D;
-    border-bottom: 5px solid #5D0C1D;
+    border-left: 5px solid red;
+    border-bottom: 5px solid red;
     position: absolute;
     width: 300px;
     height: 200px;
-    margin-left: 905px;
+    margin-left: 1070px;
 }
   
 #ME{
-    border-right: 5px solid #5D0C1D;
-    border-top: 5px solid #5D0C1D;
-    border-bottom: 5px solid #5D0C1D;
+    border-right: 5px solid green;
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
     margin-left:300px;
     margin-top:200px;
     position: absolute;
@@ -91,28 +86,28 @@ h1{
 }
   
 #MM{
-    border: 5px solid #5D0C1D;
+    border: 5px solid pink;
     position: absolute;
     width: 300px;
     height: 200px;
     margin-top: 200px;
-    margin-left: 600px;
+    margin-left: 765px;
 }
 
 #MD{
-    border-left: 5px solid #5D0C1D;
-    border-bottom: 5px solid #5D0C1D;
-    border-top: 5px solid #5D0C1D;
+    border-left: 5px solid purple;
+    border-bottom: 5px solid purple;
+    border-top: 5px solid purple;
     position: absolute;
     width: 300px;
     height: 200px;
     margin-top: 200px;
-    margin-left: 905px;
+    margin-left: 1070px;
 }
 
 #IE{
-    border-right: 5px solid #5D0C1D;
-    border-top: 5px solid #5D0C1D;
+    border-right: 5px solid brown;
+    border-top: 5px solid brown;
     position: absolute;
     width: 300px;
     height: 200px;
@@ -121,23 +116,23 @@ h1{
 }
 
 #IM{
-    border-left: 5px solid #5D0C1D;
-    border-top: 5px solid #5D0C1D;
-    border-right: 5px solid #5D0C1D;
+    border-left: 5px solid orange;
+    border-top: 5px solid orange;
+    border-right: 5px solid orange;
     position: absolute;
     width: 300px;
     height: 200px;
     margin-top: 405px;
-    margin-left: 600px;
+    margin-left: 765px;
 }
 
 #ID{
-    border-left: 5px solid #5D0C1D;
-    border-top: 5px solid #5D0C1D;
+    border-left: 5px solid #06eaff;
+    border-top: 5px solid #06eaff;
     position: absolute;
     margin-bottom: 200px;
     width: 300px;
     height: 200px;
     margin-top: 405px;
-    margin-left: 905px;
+    margin-left: 1070px;
 }
