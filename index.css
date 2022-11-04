@@ -36,34 +36,6 @@ h1, h2, h3, h4{
     border-radius: 100%;
 }
 
-/* ------------- BARRA DE NAVEGAÇÃO  ------------- 
-header {
-    background-color: #5D0C1D;
-    width: 100%;
-    height: 70px;
-}
-ul {
-    display: flex;
-    list-style-type: none;
-    font-size: 20px;
-    justify-content: center; 
-    margin: 0px;
-} 
-li {
-    margin: 20px;
-    font-family: Arial;
-} 
-#title {
-    margin-right: auto;
-}
-li a {
-   color: #e4c99f;
-   text-decoration: none; 
-}  
-li a:hover {
-    text-decoration: underline;
-}*/
-
 /* ----------------------- Footer ----------------------- */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -148,6 +120,32 @@ body {
   .contato_nav {
     flex: 2 0px;
   }
+}
+
+/* ------------------- Barra de Navegação ------------------------ */
+header {
+    background-color: #5D0C1D;
+    width: 100%;
+    height: 70px;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 20px;
+  justify-content: center; 
+  margin: 0px;
+}
+.nav li {
+  margin: 20px;
+  font-family: Arial;
+}
+li a {
+  color: #e4c99f;
+  text-decoration: none; 
+}
+li a:hover {
+  color: #FFF;
+  transition: 0.3s;
 }
 
 /*-----O 'X' E A 'O' DO JOGO-----*/
