@@ -77,7 +77,8 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-size: 14px;
-  background-color: #f4f4f4;
+  background-color: #e4c99f;
+  color: #5D0C1D;
   align-items: start;
   min-height: 100vh;
 }
