@@ -20,13 +20,11 @@ h1{
     position: static;
 }
 .avatar1 img{
-    display: inline-block;
     border: 2px solid;
     border-radius: 100%;
     position: static;
 }
 .usuario1{
-    display: inline-block;
     position: relative;
     bottom: 100px;
     left: 120px;
@@ -48,13 +46,11 @@ h1{
     bottom: 150px;
 }
 .avatar2 img{
-    display: inline-block;
     border: 2px solid;
     border-radius: 100%;
     position: static;
 }
 .usuario2{
-    display: inline-block;
     position: relative;
     bottom: 100px;
     left: 120px;
