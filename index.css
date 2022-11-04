@@ -36,7 +36,7 @@ h1, h2, h3, h4{
     border-radius: 100%;
 }
 
-/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
+/* ------------- BARRA DE NAVEGAÇÃO  ------------- 
 header {
     background-color: #5D0C1D;
     width: 100%;
@@ -62,7 +62,7 @@ li a {
 }  
 li a:hover {
     text-decoration: underline;
-}
+}*/
 
 /* ----------------------- Footer ----------------------- */
 *, *:before, *:after {
