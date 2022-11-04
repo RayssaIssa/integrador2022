@@ -1,8 +1,7 @@
 *::selection{
-    color: #5D0C1D;
-    background-color: #FFFF;
+    color: #FFF;
+    background-color: #5D0C1D;
 }
-
 .imagem{
     width:200px;
     height:120px;
@@ -23,11 +22,11 @@ h1, h2, h3, h4{
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 .text-username input {
-  color: ;
+  color: #5D0C1D;
   font-weight: 500;
   background: transparent;
   border: none;
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid #430A20;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
   outline: none;
@@ -36,48 +35,6 @@ h1, h2, h3, h4{
     border: 2px solid #5D0C1D;
     border-radius: 100%;
 }
-/*-------------para inserir usuário------------
-#login{
-	display: flex;
-	align-items: left;
-	justify-content: left;
-}
-.card{
-	opacity: 0.9;
-	padding: 20px;
-	border-radius: 2px;
-}
-.card-header{
-	padding-bottom: 50px;
-	opacity: 0.8;
-	color: #5D0C1D;
-}
-.card-header after {
-  content: "";
-  height: 1px;
-  background-color: yellow;
-  display: flex;
-}
-.text-username label{
-	color: #5D0C1D;
-	font-size: 12px;
-	opacity: 0.8;
-	font-size: 15px;
-}
-.text-username-area{
-	display: flex;
-	flex-direction: column;
-	padding: 10px 0;
-}
-.text-username-area input {
-  margin-top: 10px;
-  padding:0 5px;
-  background-color: transparent;
-  border:none;
-  border-bottom: 1px solid #430A20;
-  outline: none;
-  color: #5D0C1D;
-}*/
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 header {
