@@ -14,7 +14,31 @@
   		</ul>
 	</nav>
     </header>
-	<form action="jogadavelha.html" class="card">
+	<form action="jogadavelha.html">
+	<fieldset class="selecao">
+		<h2>Escolha seu nome de usuário e seu avatar antes de começar a jogar.</h2>
+		<div class="text-username">
+			<label class="label" for="username">Nome do Jogador 1: </label>
+			<input type="text" class="username" autocomplete="off" placeholder="Jogador 1" required>
+			<br>
+			<label class="label" for="username">Nome do jogador 2: </label>
+			<input type="text" class="username" autocomplete="off" placeholder="Jogador 2" required>
+			
+		</div>
+		<div class="avatar">	
+			<h3>Selecione seu personagem:</h3>
+			<img src="rainha.png" width="100px" title="Rainha Maria Antonieta">            
+			<img src="rei.png" width="100px" title="Rei Luis XVI">
+			<img src="olympe.png" width="100px" title="Olympe de Gouges">
+			<img src="sanson.png" width="100px" title="Charles Sanson">
+			<img src="marat.png" width="100px" title="Jean Paul Marat">
+			<img src="robesppierre.png" width="100px" title="Maximilien de Robespierre">
+			<img src="napoleao.png" width="100px" title="Napoleão Bonaparte">
+		</div>
+		<input id="submeter_nomes" type="submit" value="Entre no Jogo" onclick="ativar();">
+	</fieldset>
+	</form>
+	<!--<form action="jogadavelha.html" class="card">
 		<fieldset class="selecao">
 		<div id="login" class="card-head">
 			<h2>Escolha seu nome de usuário e seu avatar antes de começar a jogar.</h2><br><br>
@@ -39,7 +63,7 @@
 			</div>
 		<input id="submeter_nomes" type="submit" value="Entre no Jogo" onclick="ativar();">
 		</fieldset>
-	</form>
+	</form>-->
 	<div class="tutorial">
 		<h3>Como Jogar:</h3>
 		<ol>
