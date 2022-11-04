@@ -9,7 +9,7 @@
     margin-left:50px;
     margin-top:50px;
 }
-h1{
+h1, h2, h3, h4{
   align-items: center;
 }
 .selecao{
@@ -31,7 +31,6 @@ h1{
 	opacity: 0.9;
 	padding: 20px;
 	border-radius: 2px;
-
 }
 .card-header{
 	padding-bottom: 50px;
@@ -39,15 +38,10 @@ h1{
 	color: #5D0C1D;
 }
 .card-header after {
-
   content: "";
-
   height: 1px;
-
   background-color: yellow;
-
   display: flex;
-
 }
 .text-username label{
 	color: #5D0C1D;
@@ -62,17 +56,11 @@ h1{
 }
 .text-username-area input {
   margin-top: 10px;
-
   padding:0 5px;
-
   background-color: transparent;
-
   border:none;
-
   border-bottom: 1px solid #430A20;
-
   outline: none;
-
   color: #5D0C1D;
 }
 /* ------------- Escolher avatar ----------------*/
@@ -86,39 +74,29 @@ header {
     width: 100%;
     height: 70px;
 }
-  
 ul {
     display: flex;
     list-style-type: none;
     font-size: 20px;
     justify-content: center; 
     margin: 0px;
-}
-  
-  
+} 
 li {
     margin: 20px;
     font-family: Arial;
-}
-  
+} 
 #title {
     margin-right: auto;
 }
-  
-  
 li a {
    color: #e4c99f;
    text-decoration: none; 
-}
-  
+}  
 li a:hover {
     text-decoration: underline;
 }
 
-/* ------------- BARRA DE NAVEGAÇÃO  ------------- */
-
 /* ----------------------- Footer ----------------------- */
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
