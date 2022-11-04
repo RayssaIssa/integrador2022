@@ -19,10 +19,10 @@
 		<h2>Escolha seu nome de usuário e seu avatar antes de começar a jogar.</h2>
 		<div class="text-username">
 			<label class="label" for="username">Nome do Jogador 1: </label>
-			<input type="text" class="username" autocomplete="off" placeholder="Jogador 1" required>
+			<input type="text" id='user' class="username" autocomplete="off" placeholder="Jogador 1" required>
 			<br>
 			<label class="label" for="username">Nome do jogador 2: </label>
-			<input type="text" class="username" autocomplete="off" placeholder="Jogador 2" required>
+			<input type="text" id='user2' class="username" autocomplete="off" placeholder="Jogador 2" required>
 			
 		</div>
 		<div class="avatar">	
@@ -108,11 +108,5 @@
     	<p>&copy; 2022 Copyright.</p>
 	</div>
 </footer>
-<script>
-	function ativar(){
-  localStorage.setItem('user1_nome', document.getElementById('user').value);
-  localStorage.setItem('user2_nome',document.getElementById('user2').value);
-};
-</script>
 </body>
 </html>
