@@ -6,6 +6,66 @@ body{
 h1{
     color: #5D0C1D;
 }
+/* -------------------- Jogador um ---------------------- */
+.jogador-um{
+    border: 3px solid #5D0C1D;
+    border-radius: 20px;
+    width: 40%;
+    height: 110px;
+    padding: 10px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    position: static;
+}
+.avatar1 img{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 100%;
+    position: static;
+}
+.usuario1{
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    left: 120px;
+}
+
+/* --------------------- Jogador dois -------------------- */
+.jogador-dois{
+    border: 3px solid #5D0C1D;
+    border-radius: 20px;
+    width: 40%;
+    height: 108px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    position: relative;
+    left: 700px;
+    bottom: 150px;
+}
+.avatar2 img{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 100%;
+    position: static;
+}
+.usuario2{
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+    left: 120px;
+}
+
+/* -------------------- Posição do jogo ------------------- */
+.jogo{
+    position: relative;
+    right: 240px;
+    bottom: 100px;
+}
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 header {
