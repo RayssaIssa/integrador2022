@@ -12,6 +12,7 @@
 h1, h2, h3, h4{
   align-items: center;
 }
+/* ---------------------- Escolhendo nome de usuário e avatar para jogar ------------------------ */
 .selecao{
     margin: 25px 150px;
     padding: 20px 40px;
@@ -21,7 +22,21 @@ h1, h2, h3, h4{
     -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
-/*-------------para inserir usuário------------*/
+.text-username input {
+  color: ;
+  font-weight: 500;
+  background: ;
+  border: none;
+  border-bottom: 1px solid ;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  outline: none;
+}
+.avatar img{
+    border: 2px solid #5D0C1D;
+    border-radius: 100%;
+}
+/*-------------para inserir usuário------------
 #login{
 	display: flex;
 	align-items: left;
@@ -62,12 +77,8 @@ h1, h2, h3, h4{
   border-bottom: 1px solid #430A20;
   outline: none;
   color: #5D0C1D;
-}
-/* ------------- Escolher avatar ----------------*/
-.avatar img{
-    border: 2px solid #5D0C1D;
-    border-radius: 100%;
-}
+}*/
+
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 header {
     background-color: #5D0C1D;
