@@ -118,9 +118,9 @@ function jogar(identificador){
         
         if (pode_jogar == true){
             if (vez[0] == 'user1_nome'){
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Coroas.png' width='200px' height='120px' margin-left='50px' margin-top='50px'></img>";
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='coroa.png' width='200px' height='120px' margin-left='50px' margin-top='50px'></img>";
             }else{
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='Pão.png' width='200px' height='120px' margin-left='50px' margin-top='50px'></img>";
+                document.getElementById(identificador).innerHTML = "<img class='imagem' src='pao.png' width='200px' height='120px' margin-left='50px' margin-top='50px'></img>";
             };
             
         
