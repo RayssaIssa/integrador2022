@@ -1,4 +1,18 @@
-/*-----------------------------------------------------*/
+/*--------------------- Modal das perguntas --------------------------------*/
+function iniciar(modalID) {
+		const modal = document.getElementById(modalID);
+		modal.classList.add("mostrar");
+		modal.addEventListener('click', (e) => {
+		if (e.target.id == 'fecha') {
+			modal.classList.remove('mostrar'); /* Aqui eu tô definindo que só deve fechar clicando no x */
+		}
+		});
+	}
+/*------- Essa parte era onde definia o clique, que no jogo atual não existe, temos que fazer alterações (esse comentario é só pra explicar o que ta rolando) -------------- */
+	const text = document.querySelector('.aqui');
+	text.addEventListener('click', () => iniciar('modal-container')); /* Aqui eu tô chamando o modal quando clicarem no local com a classe .aqui */
+
+
 /*-------------PERGUNTAS E RESPOSTAS-------------------*/
 /*-----------------------------------------------------*/
 
