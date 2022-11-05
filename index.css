@@ -13,7 +13,7 @@ h1, h2, h3, h4{
 }
 /* ---------------------- Escolhendo nome de usuário e avatar para jogar ------------------------ */
 .selecao{
-    margin: 25px 150px;
+    margin: 25px 90px;
     padding: 20px 40px;
     border: 8px double;
     border-radius: 10px;
@@ -35,6 +35,20 @@ h1, h2, h3, h4{
     border: 2px solid #5D0C1D;
     border-radius: 100%;
     cursor:pointer;
+}
+.info{
+  position: static;
+}
+.sobre{
+  border-left: 2px solid #5D0C1D;
+  margin-right: 5px;
+  padding-left: 15px;
+  position: relative;
+  left: 680px;
+  bottom: 340px;
+}
+.sobre p{
+  text-align: justify;
 }
 
 /* ----------------------- Footer ----------------------- */
