@@ -45,8 +45,8 @@ const respostas_maria_antonieta = [
 
 ];
 
-jogador1 = [localStorage.getItem('user1_nome'), 6, 0];
-jogador2 = [localStorage.getItem('user2_nome'), 6, 0];
+jogador1 = [localStorage.getItem('user1_nome'), 6, 0,];
+jogador2 = [localStorage.getItem('user2_nome'), 6, 0,];
 
 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
@@ -58,6 +58,34 @@ pode_jogar = true;
 
 jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
 var paridade = '';
+
+if (localStorage.getItem('personagem_jogador1') == "maria_antonieta"){
+    document.getElementById('avatar1').innerHTML = "<img src='rainha.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador1') == "rei_luis_xvi"){
+    document.getElementById('avatar1').innerHTML = "<img src='rei.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador1') == "olympe"){
+    document.getElementById('avatar1').innerHTML = "<img src='olympe.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador1') == "sanson"){
+    document.getElementById('avatar1').innerHTML = "<img src='sanson.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador1') == "marat"){
+    document.getElementById('avatar1').innerHTML = "<img src='marat.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador1') == "robespierre"){
+    document.getElementById('avatar1').innerHTML = "<img src='robesppierre.png' width='80px'>";
+};
+
+if (localStorage.getItem('personagem_jogador2') == "maria_antonieta"){
+    document.getElementById('avatar2').innerHTML = "<img src='rainha.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador2') == "rei_luis_xvi"){
+    document.getElementById('avatar2').innerHTML = "<img src='rei.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador2') == "olympe"){
+    document.getElementById('avatar2').innerHTML = "<img src='olympe.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador2') == "sanson"){
+    document.getElementById('avatar2').innerHTML = "<img src='sanson.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador2') == "marat"){
+    document.getElementById('avatar2').innerHTML = "<img src='marat.png' width='80px'>";
+}else if (localStorage.getItem('personagem_jogador2') == "robespierre"){
+    document.getElementById('avatar2').innerHTML = "<img src='robesppierre.png' width='80px'>";
+};
 
 function jogar(identificador){
 
@@ -442,7 +470,7 @@ function jogar(identificador){
                 jogador2[1] -= 1;
             };
             document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
-            document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador[2];
+            document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
             matriz_jogo = ['','','','','','','','',''];
             document.getElementById("SE").innerHTML = "";
             document.getElementById("SM").innerHTML = "";
@@ -474,3 +502,4 @@ function jogar(identificador){
             document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
         };
 };
+
