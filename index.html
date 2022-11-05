@@ -19,19 +19,21 @@
 		<div class="info">
 			<h2>Escolha seu nome de usuário e seu avatar antes de começar a jogar.</h2>
 			<div class="text-username">
-				<label class="label" for="username">Nome do Jogador 1: </label>
+				<label class="label" for="username"><b>Nome do Jogador 1: </b></label>
 				<input type="text" id="user" maxlength="13" class="username" autocomplete="off" placeholder="Jogador 1" required><br>
-				<label class="label" for="username">Nome do jogador 2: </label>
+				<label class="label" for="username"><b>Nome do jogador 2: </b></label>
 				<input type="text" id="user2" maxlength="13" class="username" autocomplete="off" placeholder="Jogador 2" required>	
 			</div>
 			<div class="avatar">	
 				<h3>Selecione seu personagem:</h3>
-				<img src="rainha.png" width="100px" title="Rainha Maria Antonieta">            
-				<img src="rei.png" width="100px" title="Rei Luis XVI">
-				<img src="olympe.png" width="100px" title="Olympe de Gouges">
-				<img src="sanson.png" width="100px" title="Charles Sanson">
-				<img src="marat.png" width="100px" title="Jean Paul Marat">
-				<img src="robesppierre.png" width="100px" title="Maximilien de Robespierre">
+				<img id="maria_antonieta" src="rainha.png" width="100px" title="Rainha Maria Antonieta" onclick="selecionar_personagem('maria_antonieta');">            
+				<img id="rei_luis_xvi" src="rei.png" width="100px" title="Rei Luis XVI" onclick="selecionar_personagem('rei_luis_xvi');">
+				<img id="olympe" src="olympe.png" width="100px" title="Olympe de Gouges" onclick="selecionar_personagem('olympe');">
+				<img id="sanson" src="sanson.png" width="100px" title="Charles Sanson" onclick="selecionar_personagem('sanson');">
+				<img id="marat" src="marat.png" width="100px" title="Jean Paul Marat" onclick="selecionar_personagem('marat');">
+				<img id="robespierre" src="robesppierre.png" width="100px" title="Maximilien de Robespierre" onclick="selecionar_personagem('robespierre');">
+				<div id='escolher_1' onclick="mudar_selecao('personagem_jogador1');">Jogador 1</div> 
+				<div id="escolher_2" onclick="mudar_selecao('personagem_jogador2')">Jogador 2</div>
 				<!--<img src="napoleao.png" width="100px" title="Napoleão Bonaparte">-->
 			</div>
 			<input id="submeter_nomes" type="submit" value="Entre no Jogo" onclick="ativar();">
