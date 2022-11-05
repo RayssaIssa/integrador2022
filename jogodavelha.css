@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap');
 body{
     background-color: #EAD3C1;
-    font-family: acumin-pro, system-ui, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0px;
 }
 h1{
@@ -10,7 +11,7 @@ h1{
 .jogador-um{
     border: 3px solid #5D0C1D;
     border-radius: 20px;
-    width: 25%;
+    width: 20%;
     height: 90px;
     padding: 10px;
     margin-left: 40px;
@@ -34,7 +35,7 @@ h1{
 .jogador-dois{
     border: 3px solid #5D0C1D;
     border-radius: 20px;
-    width: 25%;
+    width: 20%;
     height: 90px;
     padding: 10px;
     margin-left: 50px;
@@ -42,7 +43,7 @@ h1{
     margin-bottom: 15px;
     margin-top: 10px;
     position: relative;
-    left: 900px;
+    left: 970px;
     bottom: 130px;
 }
 .avatar2 img{
