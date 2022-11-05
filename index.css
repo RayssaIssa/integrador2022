@@ -56,7 +56,7 @@ text-align: justify;
 .button{
     text-transform: uppercase;
     font-weight: 300;
-    background: #3B3636;
+    background: #5D0C1D;
     color: #DDD9CE;
     width: 10rem;
     height: 2.25rem;
@@ -67,9 +67,6 @@ text-align: justify;
     position: relative;
     bottom: 80px;
 }
-
-/*------ Para escolher os jogadores */
-
 #escolher_1{
   position:relative;
   width: 150px;
