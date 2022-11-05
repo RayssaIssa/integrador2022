@@ -79,7 +79,70 @@ h1{
     bottom: 230px;
 }
 
-/* --------------------- Perguntas ------------------ */
+/* --------------------- Perguntas ------------------*/
+.button{
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #3B3636;
+    color: #DDD9CE;
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+.conteiner-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    font-family: 'Jost', sans-serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-modal.mostrar{
+    display: flex;
+}
+.modal{
+    background: white;
+    width: 40%;
+    min-width: 300px;
+    padding: 40px;
+    border: 8px solid #988b7a;
+    box-shadow: 0 0 0 10px white;
+    position: relative;
+}
+.fechar{
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+    background: #988b7a;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4em;
+}
+@keyframes modaal{
+    from {
+        opacity: 0;
+        transform: translate3d(0px, -60px, 0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    }
+.mostrar .modal{
+    animation: modaal .3s;
+}
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 header {
