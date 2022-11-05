@@ -14,25 +14,27 @@
   		</ul>
 	</nav>
     </header>
-	<form action="jogadavelha.html">
+	<form action="jogodavelha.html">
 	<fieldset class="selecao">
-		<h2>Escolha seu nome de usuário e seu avatar antes de começar a jogar.</h2>
-		<div class="text-username">
-			<label class="label" for="username">Nome do Jogador 1: </label>
-			<input type="text" id='user' maxlength="13" class="username" autocomplete="off" placeholder="Jogador 1" required>
-			<br>
-			<label class="label" for="username">Nome do jogador 2: </label>
-			<input type="text" id='user2' maxlength="13" class="username" autocomplete="off" placeholder="Jogador 2" required>	
-		</div>
-		<div class="avatar">	
-			<h3>Selecione seu personagem:</h3>
-			<img src="rainha.png" width="100px" title="Rainha Maria Antonieta" onclick="selecionar_personagem('maria_antonieta');">            
-			<img src="rei.png" width="100px" title="Rei Luis XVI" onclick="selecionar_personagem('rei_luis_xvi');">
-			<img src="olympe.png" width="100px" title="Olympe de Gouges" onclick="selecionar_personagem('olympe');">
-			<img src="sanson.png" width="100px" title="Charles Sanson" onclick="selecionar_personagem('sanson');">
-			<img src="marat.png" width="100px" title="Jean Paul Marat" onclick="selecionar_personagem('marat');">
-			<img src="robesppierre.png" width="100px" title="Maximilien de Robespierre" onclick="selecionar_personagem('robespierre');">
-			<!--<img src="napoleao.png" width="100px" title="Napoleão Bonaparte">-->
+		<div class="info">
+			<h2>Escolha seu nome de usuário e seu avatar antes de começar a jogar.</h2>
+			<div class="text-username">
+				<label class="label" for="username">Nome do Jogador 1: </label>
+				<input type="text" id="user" maxlength="13" class="username" autocomplete="off" placeholder="Jogador 1" required><br>
+				<label class="label" for="username">Nome do jogador 2: </label>
+				<input type="text" id="user2" maxlength="13" class="username" autocomplete="off" placeholder="Jogador 2" required>	
+			</div>
+			<div class="avatar">	
+				<h3>Selecione seu personagem:</h3>
+				<img src="rainha.png" width="100px" title="Rainha Maria Antonieta">            
+				<img src="rei.png" width="100px" title="Rei Luis XVI">
+				<img src="olympe.png" width="100px" title="Olympe de Gouges">
+				<img src="sanson.png" width="100px" title="Charles Sanson">
+				<img src="marat.png" width="100px" title="Jean Paul Marat">
+				<img src="robesppierre.png" width="100px" title="Maximilien de Robespierre">
+				<!--<img src="napoleao.png" width="100px" title="Napoleão Bonaparte">-->
+			</div>
+			<input id="submeter_nomes" type="submit" value="Entre no Jogo" onclick="ativar();">
 		</div>
 		<div class="sobre">
 			<h2>Sobre o personagem:</h2>
@@ -40,7 +42,6 @@
 			<span><i>(1970-2025)</i></span>
 			<p>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.<br>Um pequeno texto descrevendo os seu principais feitos, e etc.</p>
 		</div>
-		<input id="submeter_nomes" type="submit" value="Entre no Jogo" onclick="ativar();">
 	</fieldset>
 	</form>
 	<div class="tutorial">
