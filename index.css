@@ -45,6 +45,7 @@ position: static;
   width:400px;
   border-left: 2px solid #5D0C1D;
   margin-left: 250px;
+  margin-top:-200px;
   padding-left: 15px;
   position: absolute;
   left: 440px;
