@@ -1,3 +1,50 @@
+/*-----------------------------------------------------*/
+/*-------------PERGUNTAS E RESPOSTAS-------------------*/
+/*-----------------------------------------------------*/
+
+const perguntas_danton = [
+    "<i>Danton, famoso representante da revolução Francesa, era aliado de qual partido?</i><br><input name='resposta' type='radio' value='a'> Jacobinos<br><input name='resposta' type='radio' value='b'> Girondinos<br> <input name='resposta' type='radio' value='c'> Planície",
+    "<i>Conhecido por ter uma eloquência invejável, Danton foi o responsável por vários discursos triunfantes. Um desses discursos foi responsável por dar fim a um período temoroso da revolução. Indique esse período.</i><br> <input name='resposta' type='radio' value='a'> Absolutismo Francês<br> <input name='resposta' type='radio' value='b'> Revolução Haitiana<br><input name='resposta' type='radio' value='c'> O Terror",
+    "<i>Durante os primeiros anos da Revolução Francesa, Danton foi uma figura revolucionária e nomeada para vários cargos que teve sua fama variando de:</i><br><input name='resposta' type='radio' value='a'> Patriota e Caridoso para traidor e usurpador<br><input name='resposta' type='radio' value='b'> Corrupto e traidor para generoso e patriota<br><input name='resposta' type='radio' value='c'> Patriota corrupto para traidor corrupto"
+];
+
+const repostas_danton = [
+    "a", "c", "b"
+];
+
+const perguntas_napoleao = [
+    "<i>Sabendo que Napoleão Bonaparte foi a favor da Revolução Francesa e dos Jacobinos, quais foram as consequências da posição adotada por ele na revolução?</i><br><input name='repostas' type='radio' value='a'> Executado na guilhotina em praça pública<br><input name='repostas' type='radio' value='b'> Exilado para Inglaterra, acusado de traição à Coroa<br><input name='repostas' type='radio' value='c'> Preso em 1974 e solto posteriormente",
+    "<i>Sabendo que Napoleão Bonaparte foi a favor da Revolução Francesa e dos Jacobinos, marque o principal grupo que o ajudou a dar o golpe político em 1799.</i><br><input name='resposta' type='radio' value='a'> Jacobinos<br><input name='resposta' type='radio' value='b'> Proto-burguesia<br><input name='resposta' type='radio' value='c'> Proletariado",
+    "<i>Apesar de ter se tornado imperador da França em 1804 após a Revolução Francesa, Napoleão não nasceu em território continental francês, mas em uma das províncias do antigo Estado absolutista da França. Onde Bonaparte nasceu?</i><br><input name='resposta' type='radio' value='a'> Em Ajaccio, na Ilha de Córsega<br><input name='resposta' type='radio' value='b'> Em uma província da Guiana Francesa, colônia da França<br><input name='resposta' type='radio' value='c'> Em Braunau am Inn, na Áustria",
+    "<i>Em 1804, na cerimônia de coroação de Napoleão Bonaparte, um fato inusitado ocorreu:</i><br><input name='resposta' type='radio' value='a'>Napoleão abdicou do trono, pois queria ser general do exército<br><input name='resposta' type='radio' value='b'>Não houve coroação, pois os Jacobinos estavam iniciando a Revolução Francesa<br><input name='resposta' type='radio' value='c'>Napoleão auto coroou-se"
+];
+
+const respostas_napoleao = [
+    "c", "b", "a", "c"
+];
+
+const perguntas_robespierre = [
+    "<i>Maximilien Robespierre foi uma grande figura na revolução francesa. De acordo com os seus princípios, ele era lider:</i><br><input name='resposta' type='radio' value='a'> Dos girondinos<br><input name='resposta' type='radio' value='b'> Dos jacobinos<br><input name='resposta' type='radio' value='c'> Da burguesia",
+    "<i>Maximilien Robespierre defendia a filosofia de:</i><br><input name='resposta' type='radio' value='a'> Rousseau<br><input name='resposta' type='radio' value='b'> John Locke<br><input name='resposta' type='radio' value='c'> Denis Diderot"
+];
+
+const repostas_robespierre = [
+    "b", "a"
+];
+
+const perguntas_maria_antonieta = [
+    "<i>Com quem  Maria Antônia Josefa Joana de Habsburgo-Lorena casou- se ?</i><br><input name='resposta' type='radio' value='a'> Luís XV<br><input name='resposta' type='radio' value='b'> Luíz XVI<br><input name='resposta' type='radio' value='c'> Luís XIV",
+    "<i>Qual foi o ano em que Maria Antonieta se tornou Rainha da França?</i><br><input name='resposta' type='radio' value='a'> 1798<br><input name='resposta' type='radio' value='b'> 1865<br><input name='resposta' type='radio' value='c'> 1774",
+    "<i>O casamento de Maria Antonieta foi parte de um acordo para aproximar Portugal e França?</i><br><input name='resposta' type='radio' value='a'> Verdadeiro<br><input name='resposta' type='radio' value='b'> Falso",
+    "",
+    "",
+    ""
+];
+
+const respostas_maria_antonieta = [
+
+];
+
 jogador1 = [localStorage.getItem('user1_nome'), 6, 0];
 jogador2 = [localStorage.getItem('user2_nome'), 6, 0];
 
