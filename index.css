@@ -171,3 +171,29 @@ header {
     margin-left:50px;
     margin-top:50px;
 }
+
+/*------ Para escolher os jogadores */
+
+#escolher_1{
+  position:absolute;
+  cursor:pointer;
+  font-size: x-large;
+  margin-left:650px;
+  margin-top:-110px;
+  background-color:#430A20;
+  padding:10px;
+  border-radius:10px;
+  color:white;
+}
+
+#escolher_2{
+  position:absolute;
+  cursor:pointer;
+  font-size: x-large;
+  margin-left:650px;
+  margin-top:-50px;
+  background-color:#9A825F;
+  padding:10px;
+  border-radius:10px;
+  color:white;
+}
