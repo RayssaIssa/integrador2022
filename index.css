@@ -42,6 +42,7 @@ outline: none;
 position: static;
 }
 .sobre{
+width:400px;
 border-left: 2px solid #5D0C1D;
 margin-left: 250px;
 padding-left: 15px;
