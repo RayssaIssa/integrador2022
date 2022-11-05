@@ -13,20 +13,22 @@ h1, h2, h3, h4{
 }
 /* ---------------------- Escolhendo nome de usuário e avatar para jogar ------------------------ */
 .selecao{
-    margin: 25px 90px;
-    padding: 20px 40px;
-    border: 8px double;
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  margin: 25px 90px;
+  padding: 20px 40px;
+  background-color: #EAD3C1;
+  height: 400px;
+  border: 8px double;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 .text-username input {
   color: #5D0C1D;
   font-weight: 500;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #430A20;
+  border-bottom: 1px solid #5D0C1D;
   padding: 0.5rem 0;
   margin-bottom: 1rem;
   outline: none;
@@ -34,7 +36,6 @@ h1, h2, h3, h4{
 .avatar img{
     border: 2px solid #5D0C1D;
     border-radius: 100%;
-    cursor:pointer;
 }
 .info{
   position: static;
