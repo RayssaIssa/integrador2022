@@ -1,4 +1,4 @@
-const selecao = ['pergonagem_jogador1']
+const selecao = ['pergonagem_jogador1'];
 
 escolheu1 = [false];
 escolheu2 = [false];
