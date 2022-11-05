@@ -56,6 +56,19 @@ h1{
     left: 100px;
 }
 
+/* -------------------- Vez do jogador --------------- */
+.vez h2{
+    border: 5px double #5D0C1D;
+    border-radius: 15px;
+    padding: 8px 10px;
+    width: 260px;
+    height: 28px;
+    position: relative;
+    left: 535px;
+    bottom: 240px;
+    text-align: center;
+}
+
 /* -------------------- Posição do jogo ------------------- */
 .jogo{
     position: relative;
