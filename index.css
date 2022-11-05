@@ -49,7 +49,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-size: 14px;
-  background-color: #e4c99f;
+  background-color: #EAD3C1;
   color: #5D0C1D;
   align-items: start;
   min-height: 100vh;
