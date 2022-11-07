@@ -7,6 +7,7 @@ body{
 h1{
     color: #5D0C1D;
 }
+
 /* -------------------- Jogador um ---------------------- */
 .jogador-um{
     border: 3px solid #5D0C1D;
@@ -61,6 +62,13 @@ h1{
     left: 100px;
 }
 
+/* -------------------- Posição do jogo ------------------- */
+.jogo{
+    position: relative;
+    right: 3%;
+    bottom: 230px;
+}
+
 /* -------------------- Vez do jogador --------------- */
 .vez h2{
     border-bottom: 5px double #5D0C1D;
@@ -74,13 +82,6 @@ h1{
 }
 .vez h2.a { 
     text-shadow: 0.1em 0.1em 0.2em #5D0C1D;
-}
-
-/* -------------------- Posição do jogo ------------------- */
-.jogo{
-    position: relative;
-    right: 3%;
-    bottom: 230px;
 }
 
 /* --------------------- Perguntas ------------------*/
@@ -212,7 +213,8 @@ header {
     width: 300px;
     height: 200px;
     margin-left:465px;
-} 
+
+}
 #MM{
     border: 5px solid #5D0C1D;
     position: absolute;
@@ -263,13 +265,11 @@ header {
 
 /*-----------AVATARES------------*/
 .avatar{
-    padding-left:10px;
+    padding-left:10px; 
 }
 
 /*-----O 'X' E A 'O' DO JOGO-----*/
-
 .imagem{
     margin-left:50px;
     margin-top:50px;
 }
-
