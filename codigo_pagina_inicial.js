@@ -78,12 +78,12 @@ function selecionar_personagem(personagem){
       document.getElementById('chibi').src = "olympe_chibi.png"
     }else if (personagem == "danton"){
       document.getElementById('nome_da_pessoa').innerHTML = "Georges Jacques Danton";
-      document.getElementById('datas_personagem').innerHTML = "(1739-1806)";
+      document.getElementById('datas_personagem').innerHTML = "(1759-1794)";
       document.getElementById('texto_personagem').innerHTML = "Foi um advogado e político francês que se tornou uma figura destacada nos estágios iniciais da Revolução Francesa, Georges Jacques Danton foi um advogado e político francês que se tornou uma figura destacada nos estágios iniciais da Revolução Francesa. Apoiava os jacobinos que queriam a substituição de Luis XVI por Philippe d'Orleans. Era opositor de Robespierre";
       document.getElementById('chibi').src = "danton_chibi.png"
     }else if (personagem == "napoleao"){
       document.getElementById('nome_da_pessoa').innerHTML = "Napoleão Bonaparte";
-      document.getElementById('datas_personagem').innerHTML = "(1743-1793)";
+      document.getElementById('datas_personagem').innerHTML = "(1769-1821)";
       document.getElementById('texto_personagem').innerHTML = "Estadista ,líder militar e General de Brigada que originalmente era opositor à Revolução, mas que após se aliar ao Grupo Jacobino foi se consolidando politicamente até o Golpe do 18 de Brumário";
       document.getElementById('chibi').src = "napoleao_chibi.png"
     }else if (personagem == "robespierre"){
