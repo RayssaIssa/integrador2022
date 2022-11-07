@@ -7,14 +7,14 @@ body{
 h1{
     color: #5D0C1D;
 }
-/* -------------------- Jogador um ----------------------*/
+/* -------------------- Jogador um ---------------------- */
 .jogador-um{
     border: 3px solid #5D0C1D;
     border-radius: 20px;
     width: 20%;
-    height: 90px;
     min-width: 300px;
     max-width: 400px;
+    height: 90px;
     padding: 10px;
     margin-left: 2%;
     margin-bottom: 15px;
@@ -38,16 +38,16 @@ h1{
     border: 3px solid #5D0C1D;
     border-radius: 20px;
     width: 20%;
-    height: 90px;
     min-width: 300px;
     max-width: 400px;
+    height: 90px;
     padding: 10px;
     margin-left: 50px;
     margin-right: 2%;
     margin-bottom: 15px;
     margin-top: 10px;
     position: relative;
-    left: 970px;
+    left: 72%;
     bottom: 130px;
 }
 .avatar2 img{
