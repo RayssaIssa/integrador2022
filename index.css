@@ -51,9 +51,7 @@ position: static;
   position: absolute;
   left: 440px;
   bottom: 90px;
-}
-.sobre p{
-text-align: justify;
+  text-align: justify;
 }
 .button{
     text-transform: uppercase;
