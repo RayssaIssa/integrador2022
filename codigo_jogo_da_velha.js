@@ -106,6 +106,7 @@ matriz_jogo = ['','','','','','','','',''];
 const vez = ['user1_nome'];
 pode_jogar = true;
 ultima_casa = [];
+var_empate = false;
 
 var personagem;
 var indice;
@@ -113,7 +114,7 @@ var indice;
 jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
 var paridade = '';
 
-document.getElementById('texto_de_vez').innerHTML = "VEZ DE " + user1_nome;
+document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
 
 if (localStorage.getItem('personagem_jogador1') == "maria_antonieta"){
     document.getElementById('avatar1').innerHTML = "<img src='rainha.png' width='80px'>";
@@ -141,6 +142,36 @@ if (localStorage.getItem('personagem_jogador2') == "maria_antonieta"){
     document.getElementById('avatar2').innerHTML = "<img src='napoleao.png' width='80px'>";
 }else if (localStorage.getItem('personagem_jogador2') == "robespierre"){
     document.getElementById('avatar2').innerHTML = "<img src='robesppierre.png' width='80px'>";
+};
+
+function empate(){
+
+    vez[0] = "user1_nome";
+    document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
+    document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + localStorage.getItem('user2_nome');
+
+    if (jogador1[3] == 'maria_antonieta'){
+        document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[Math.floor(Math.random()*6)];
+        var_empate = false;
+    }else if(jogador1[3] == 'danton'){
+        document.getElementById('perguntas').innerHTML = perguntas_danton[Math.floor(Math.random()*6)];
+        var_empate = false;
+    }else if(jogador1[3] == 'napoleao'){
+        document.getElementById('perguntas').innerHTML = perguntas_napoleao[Math.floor(Math.random()*6)];
+        var_empate = false;
+    }else if(jogador1[3] == 'robespierre'){
+        document.getElementById('perguntas').innerHTML = perguntas_robespierre[Math.floor(Math.random()*6)];
+        var_empate = false;
+    }else if(jogador1[3] == 'rei_luis_xvi'){
+        document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[Math.floor(Math.random()*6)];
+        var_empate = false;
+    }else if(jogador1[3] == 'olympe'){
+        document.getElementById('perguntas').innerHTML = perguntas_olympe[Math.floor(Math.random()*6)];
+        var_empate = false;
+    };
+
+    document.getElementById('modal-container').style.display = "flex";
+    document.getElementById('modal').style.display = "flex";
 };
 
 function pergunta_aleatoria(indice){
@@ -186,11 +217,8 @@ function pergunta_aleatoria(indice){
 };
 
 function pergunta(personagem, indice){
+
     if (personagem == 'maria_antonieta'){
-        vida1 = jogador1[1]
-        vida2 = jogador2[1]
-        acertos1 = jogador1[2]
-        acertos2 = jogador2[2]
         
         if (respostas_maria_antonieta[indice] !=  document.querySelector("input[name=resposta]:checked").value){
             if (vez[0] == 'user2_nome'){
@@ -300,6 +328,7 @@ function pergunta(personagem, indice){
             }
         }
     }
+
     if ((jogador1[1]==0) && (jogador2[1] == 0)){
         localStorage.setItem('Vencedor', 'Empate');
         window.location.replace('pagina_de_vencedor.html')
@@ -312,6 +341,9 @@ function pergunta(personagem, indice){
     };
     document.getElementById('modal-container').style.display = "none";
     document.getElementById('modal').style.display = "none";
+    if (var_empate == true){
+        empate();
+    }
     document.getElementById('pergunta_aleatoria').reset();
 }
 
@@ -789,39 +821,23 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
         }else if ((matriz_jogo[0] != '')&&(matriz_jogo[1] != '')&&(matriz_jogo[2] != '')&&(matriz_jogo[3] != '')&&(matriz_jogo[4] != '')&&(matriz_jogo[5] != '')&&(matriz_jogo[6] != '')&&(matriz_jogo[7] != '')&&(matriz_jogo[8] != '')){
             
-            document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + user1_nome;
+            var_empate = true;
+            document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + localStorage.getItem('user1_nome');
             
                 if (jogador2[3] == 'maria_antonieta'){
-                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[Math.floor(Math.random()*7)];
+                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[Math.floor(Math.random()*6)];
                 }else if(jogador2[3] == 'danton'){
-                    document.getElementById('perguntas').innerHTML = perguntas_danton[Math.floor(Math.random()*7)];
+                    document.getElementById('perguntas').innerHTML = perguntas_danton[Math.floor(Math.random()*6)];
                 }else if(jogador2[3] == 'napoleao'){
-                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[Math.floor(Math.random()*7)];
+                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[Math.floor(Math.random()*6)];
                 }else if(jogador2[3] == 'robespierre'){
-                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[Math.floor(Math.random()*7)];
+                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[Math.floor(Math.random()*6)];
                 }else if(jogador2[3] == 'rei_luis_xvi'){
-                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[Math.floor(Math.random()*7)];
+                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[Math.floor(Math.random()*6)];
                 }else if(jogador2[3] == 'olympe'){
-                    document.getElementById('perguntas').innerHTML = perguntas_olympe[Math.floor(Math.random()*7)];
-                }
-
-            document.getElementById('modal-container').style.display = "flex";
-            document.getElementById('modal').style.display = "flex";
-            document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + user2_nome;
+                    document.getElementById('perguntas').innerHTML = perguntas_olympe[Math.floor(Math.random()*6)];
+                };
             
-                if (jogador1[3] == 'maria_antonieta'){
-                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador1[1]];
-                }else if(jogador1[3] == 'danton'){
-                    document.getElementById('perguntas').innerHTML = perguntas_danton[jogador1[1]];
-                }else if(jogador1[3] == 'napoleao'){
-                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[jogador1[1]];
-                }else if(jogador1[3] == 'robespierre'){
-                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[jogador1[1]];
-                }else if(jogador1[3] == 'rei_luis_xvi'){
-                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[jogador1[1]];
-                }else if(jogador1[3] == 'olympe'){
-                    document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador1[1]];
-                }
 
             document.getElementById('modal-container').style.display = "flex";
             document.getElementById('modal').style.display = "flex";
@@ -847,4 +863,5 @@ function jogar(identificador){
             document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
         };
 };
+
 
