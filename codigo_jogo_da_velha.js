@@ -786,9 +786,9 @@ function jogar(identificador){
                 document.getElementById("IM").innerHTML = "";
                 document.getElementById("ID").innerHTML = "";
         }else if ((matriz_jogo[0] != '')&&(matriz_jogo[1] != '')&&(matriz_jogo[2] != '')&&(matriz_jogo[3] != '')&&(matriz_jogo[4] != '')&&(matriz_jogo[5] != '')&&(matriz_jogo[6] != '')&&(matriz_jogo[7] != '')&&(matriz_jogo[8] != '')){
-            document.getElementById('titulo_modal').innerHTML = "O Jogador " + localStorage.getItem(vez[0]) + " ganhou a partida";
             
-            if (vez[0] == "user1_nome"){
+            document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + user1_nome;
+            
                 if (jogador2[3] == 'maria_antonieta'){
                     document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador2[1]];
                 }else if(jogador2[3] == 'danton'){
@@ -802,42 +802,11 @@ function jogar(identificador){
                 }else if(jogador2[3] == 'olympe'){
                     document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador2[1]];
                 }
-            }else{
-                if (jogador1[3] == 'maria_antonieta'){
-                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador1[1]];
-                }else if(jogador1[3] == 'danton'){
-                    document.getElementById('perguntas').innerHTML = perguntas_danton[jogador1[1]];
-                }else if(jogador1[3] == 'napoleao'){
-                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[jogador1[1]];
-                }else if(jogador1[3] == 'robespierre'){
-                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[jogador1[1]];
-                }else if(jogador1[3] == 'rei_luis_xvi'){
-                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[jogador1[1]];
-                }else if(jogador1[3] == 'olympe'){
-                    document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador1[1]];
-                }
-            }
 
             document.getElementById('modal-container').style.display = "flex";
             document.getElementById('modal').style.display = "flex";
-            resposta = prompt('Olá, isso é uma pergunta:');
-            document.getElementById('titulo_modal').innerHTML = "O Jogador " + localStorage.getItem(vez[0]) + " ganhou a partida";
+            document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + user2_nome;
             
-            if (vez[0] == "user1_nome"){
-                if (jogador2[3] == 'maria_antonieta'){
-                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador2[1]];
-                }else if(jogador2[3] == 'danton'){
-                    document.getElementById('perguntas').innerHTML = perguntas_danton[jogador2[1]];
-                }else if(jogador2[3] == 'napoleao'){
-                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[jogador2[1]];
-                }else if(jogador2[3] == 'robespierre'){
-                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[jogador2[1]];
-                }else if(jogador2[3] == 'rei_luis_xvi'){
-                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[jogador2[1]];
-                }else if(jogador2[3] == 'olympe'){
-                    document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador2[1]];
-                }
-            }else{
                 if (jogador1[3] == 'maria_antonieta'){
                     document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador1[1]];
                 }else if(jogador1[3] == 'danton'){
@@ -851,7 +820,6 @@ function jogar(identificador){
                 }else if(jogador1[3] == 'olympe'){
                     document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador1[1]];
                 }
-            }
 
             document.getElementById('modal-container').style.display = "flex";
             document.getElementById('modal').style.display = "flex";
