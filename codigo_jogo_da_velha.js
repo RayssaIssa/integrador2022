@@ -113,6 +113,8 @@ var indice;
 jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
 var paridade = '';
 
+document.getElementById('texto_de_vez').innerHTML = "VEZ DE " + user1_nome;
+
 if (localStorage.getItem('personagem_jogador1') == "maria_antonieta"){
     document.getElementById('avatar1').innerHTML = "<img src='rainha.png' width='80px'>";
 }else if (localStorage.getItem('personagem_jogador1') == "rei_luis_xvi"){
@@ -759,17 +761,17 @@ function jogar(identificador){
                 }
             }else{
                 if (jogador1[3] == 'maria_antonieta'){
-                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador1[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[Math.floor(Math.random()*7)];
                 }else if(jogador1[3] == 'danton'){
-                    document.getElementById('perguntas').innerHTML = perguntas_danton[jogador1[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_danton[Math.floor(Math.random()*7)];
                 }else if(jogador1[3] == 'napoleao'){
-                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[jogador1[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[Math.floor(Math.random()*7)];
                 }else if(jogador1[3] == 'robespierre'){
-                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[jogador1[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[Math.floor(Math.random()*7)];
                 }else if(jogador1[3] == 'rei_luis_xvi'){
-                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[jogador1[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[Math.floor(Math.random()*7)];
                 }else if(jogador1[3] == 'olympe'){
-                    document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador1[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_olympe[Math.floor(Math.random()*7)];
                 }
             }
 
@@ -790,17 +792,17 @@ function jogar(identificador){
             document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + user1_nome;
             
                 if (jogador2[3] == 'maria_antonieta'){
-                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[jogador2[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_maria_antonieta[Math.floor(Math.random()*7)];
                 }else if(jogador2[3] == 'danton'){
-                    document.getElementById('perguntas').innerHTML = perguntas_danton[jogador2[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_danton[Math.floor(Math.random()*7)];
                 }else if(jogador2[3] == 'napoleao'){
-                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[jogador2[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_napoleao[Math.floor(Math.random()*7)];
                 }else if(jogador2[3] == 'robespierre'){
-                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[jogador2[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_robespierre[Math.floor(Math.random()*7)];
                 }else if(jogador2[3] == 'rei_luis_xvi'){
-                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[jogador2[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_luis_xvi[Math.floor(Math.random()*7)];
                 }else if(jogador2[3] == 'olympe'){
-                    document.getElementById('perguntas').innerHTML = perguntas_olympe[jogador2[1]];
+                    document.getElementById('perguntas').innerHTML = perguntas_olympe[Math.floor(Math.random()*7)];
                 }
 
             document.getElementById('modal-container').style.display = "flex";
