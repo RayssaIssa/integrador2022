@@ -16,7 +16,7 @@ h1{
     min-width: 300px;
     max-width: 400px;
     padding: 10px;
-    margin-left: 40px;
+    margin-left: 2%;
     margin-bottom: 15px;
     margin-right: 15px;
     margin-top: 10px;
@@ -43,7 +43,7 @@ h1{
     max-width: 400px;
     padding: 10px;
     margin-left: 50px;
-    margin-right: 15px;
+    margin-right: 2%;
     margin-bottom: 15px;
     margin-top: 10px;
     position: relative;
@@ -68,7 +68,7 @@ h1{
     width: 260px;
     height: 28px;
     position: relative;
-    left: 535px;
+    left: 40%;
     bottom: 240px;
     text-align: center;
 }
@@ -79,7 +79,7 @@ h1{
 /* -------------------- Posição do jogo ------------------- */
 .jogo{
     position: relative;
-    right: 240px;
+    right: 3%;
     bottom: 230px;
 }
 
