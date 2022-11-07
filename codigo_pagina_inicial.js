@@ -37,12 +37,12 @@ function selecionar_personagem(personagem){
       document.getElementById('olympe').style.backgroundColor = "";
     };
   
-    if (document.getElementById('sanson').style.backgroundColor == cor){
-      document.getElementById('sanson').style.backgroundColor = "";
+    if (document.getElementById('danton').style.backgroundColor == cor){
+      document.getElementById('danton').style.backgroundColor = "";
     };
   
-    if (document.getElementById('marat').style.backgroundColor == cor){
-      document.getElementById('marat').style.backgroundColor = "";
+    if (document.getElementById('napoleao').style.backgroundColor == cor){
+      document.getElementById('napoleao').style.backgroundColor = "";
     };
   
     if (document.getElementById('robespierre').style.backgroundColor == cor){
@@ -76,16 +76,16 @@ function selecionar_personagem(personagem){
       document.getElementById('datas_personagem').innerHTML = "(1748-1793)";
       document.getElementById('texto_personagem').innerHTML = "Foi uma dramaturga, ativista política, feminista e abolicionista francesa de importante atuação na Revolução Francesa. Escritora feminista de sua autoria alcançaram enorme audiência. Era uma defensora da democracia e dos direitos das mulheres.";
       document.getElementById('chibi').src = "olympe_chibi.png"
-    }else if (personagem == "sanson"){
-      document.getElementById('nome_da_pessoa').innerHTML = "Charles Sanson";
+    }else if (personagem == "danton"){
+      document.getElementById('nome_da_pessoa').innerHTML = "Georges Jacques Danton";
       document.getElementById('datas_personagem').innerHTML = "(1739-1806)";
-      document.getElementById('texto_personagem').innerHTML = "Foi o carrasco real do Reino da França em Paris e Alto-Executor da Primeira República Francesa. Foi educado, primeiramente, em um convento em Rouen até 1753, pois foi forçado a sair quando o pai de um outro aluno descobriu que ele era filho de um carrasco.";
-      document.getElementById('chibi').src = "sanson_chibi.png"
-    }else if (personagem == "marat"){
-      document.getElementById('nome_da_pessoa').innerHTML = "Jean Paul Marat";
+      document.getElementById('texto_personagem').innerHTML = "Foi um advogado e político francês que se tornou uma figura destacada nos estágios iniciais da Revolução Francesa, Georges Jacques Danton foi um advogado e político francês que se tornou uma figura destacada nos estágios iniciais da Revolução Francesa. Apoiava os jacobinos que queriam a substituição de Luis XVI por Philippe d'Orleans. Era opositor de Robespierre";
+      document.getElementById('chibi').src = "danton_chibi.png"
+    }else if (personagem == "napoleao"){
+      document.getElementById('nome_da_pessoa').innerHTML = "Napoleão Bonaparte";
       document.getElementById('datas_personagem').innerHTML = "(1743-1793)";
-      document.getElementById('texto_personagem').innerHTML = "Foi um médico, filósofo, teorista político e cientista mais conhecido como jornalista radical e político da Revolução Francesa. Muitos séculos trabalhando, era conhecido e respeitado por seu caráter impetuoso e postura descompromissada diante do novo governo.";
-      document.getElementById('chibi').src = "marat_chibi.png"
+      document.getElementById('texto_personagem').innerHTML = "Estadista ,líder militar e General de Brigada que originalmente era opositor à Revolução, mas que após se aliar ao Grupo Jacobino foi se consolidando politicamente até o Golpe do 18 de Brumário";
+      document.getElementById('chibi').src = "napoleao_chibi.png"
     }else if (personagem == "robespierre"){
       document.getElementById('nome_da_pessoa').innerHTML = "Maximilien de Robesppierre ";
       document.getElementById('datas_personagem').innerHTML = "(1758-1794)";
@@ -103,3 +103,4 @@ function selecionar_personagem(personagem){
     document.getElementById('submeter_nomes').disabled = false;
   };
 };
+
