@@ -50,7 +50,8 @@ position: static;
   padding-left: 15px;
   position: absolute;
   left: 440px;
-  bottom: 90px;
+  top: 65%;
+  bottom: 30%;
   text-align: justify;
 }
 .button{
