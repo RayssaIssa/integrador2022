@@ -821,6 +821,7 @@ function jogar(identificador){
                 document.getElementById("ID").innerHTML = "";
         }else if ((matriz_jogo[0] != '')&&(matriz_jogo[1] != '')&&(matriz_jogo[2] != '')&&(matriz_jogo[3] != '')&&(matriz_jogo[4] != '')&&(matriz_jogo[5] != '')&&(matriz_jogo[6] != '')&&(matriz_jogo[7] != '')&&(matriz_jogo[8] != '')){
             
+            vez[0] = "user1_nome";
             var_empate = true;
             document.getElementById('titulo_modal').innerHTML = "Empate! Pergunta para: " + localStorage.getItem('user1_nome');
             
