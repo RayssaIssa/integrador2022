@@ -11,6 +11,35 @@
 h1, h2, h3, h4{
 align-items: center;
 }
+/* -------------------- Página do vencedor --------------------*/
+.vencedor{
+  padding: 5% 8%;
+  margin: 5% 10%;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.vencedor a{
+  text-decoration: none;
+  color: #FFF;
+}
+.vencedor button{
+  text-transform: uppercase;
+  font-weight: 300;
+  background: #5D0C1D;
+  color: #DDD9CE;
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.vencedor button:hover{
+  background-color: #741127;
+  color: #999;
+  transition: .3s;
+}
+
 /* ---------------------- Escolhendo nome de usuário e avatar para jogar ----------------------- */
 .selecao{
 margin: 2% 10% 5% 10%;
