@@ -305,15 +305,54 @@ header {
     margin-left: 1070px;
 }
 
+#SE:hover, #SM:hover, #SD:hover, #ME:hover, #MM:hover, #MD:hover, #IE:hover, #IM:hover, #ID:hover{
+    background-color:#5d0c1e18;
+    cursor:pointer;
+}
+
 /*-----------AVATARES------------*/
 .avatar{
     padding-left:10px; 
 }
 
 /*-----O 'X' E A 'O' DO JOGO-----*/
-.imagem{
-    margin-left:50px;
-    margin-top:50px;
+.icone_napoelao{
+    margin-left:65px;
+    margin-top:12.5px;
+}
+
+.icone_danton{
+    width:200px;
+    height:200px;
+    margin-top:-25px;
+    margin-left:25px;
+}
+
+.icone_robespierre{
+    width:200px;
+    width:200px;
+    margin-top:10px;
+    margin-left:40px;
+}
+
+.icone_olympe{
+    width:200px;
+    height:200px;
+    margin-left:75px;
+}
+
+.icone_rei{
+    width:175px;
+    height:175px;
+    margin-left:70px;
+    margin-top:25px;
+}
+
+.icone_rainha{
+    width:175px;
+    height:175px;
+    margin-left:65px;
+    margin-top:25px;
 }
 
 /* ------------------- Modal de ajuda ---------------------------*/
