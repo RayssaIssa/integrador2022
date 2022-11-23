@@ -122,19 +122,6 @@ h1{
     box-shadow: 0 0 0 10px white;
     position: relative;
 }
-.fechar{
-    position: absolute;
-    top: -25px;
-    right: -25px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 100%;
-    background: #988b7a;
-    cursor: pointer;
-    color: white;
-    font-size: 1.4em;
-}
 @keyframes modaal{
     from {
         opacity: 0;
