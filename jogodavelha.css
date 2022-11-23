@@ -160,6 +160,7 @@ h1{
 }
 .pergunta input[type="radio"]{
     appearance: none;
+    margin-top: 2%;
     border: 3px solid #741127;
     width: 20px;
     height: 20px;
