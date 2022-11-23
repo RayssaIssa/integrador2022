@@ -221,3 +221,14 @@ margin-right: 30px;
   margin-top:50px;
 }
 
+/* ----------------------- Como jogar --------------------- */
+.tutorial{
+  border-radius: 15px;
+  padding: 2% 5%;
+  margin: 4% 20% 5% 20%;
+  border: 10px double #9A825F;
+  background-color: #741127;
+  color: #FFF;
+  font-size: 17px;
+}
+
