@@ -111,6 +111,11 @@ var_empate = false;
 var personagem;
 var indice;
 
+var personagem_explicacao
+var indice_explicacao
+var status_explicacao
+
+
 jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
 var paridade = '';
 
@@ -143,6 +148,28 @@ if (localStorage.getItem('personagem_jogador2') == "maria_antonieta"){
 }else if (localStorage.getItem('personagem_jogador2') == "robespierre"){
     document.getElementById('avatar2').innerHTML = "<img src='robesppierre.png' width='80px'>";
 };
+
+function continuar_essa_bosta(){
+    document.getElementById('modal-container').style.display = "none";
+    document.getElementById('modal').style.display = "none";
+    if (var_empate == true){
+        empate();
+    }
+}
+
+function explicacao(pergunta, indice, status){
+    if (status == 'certo'){
+        document.getElementById('titulo_modal').innerHTML = "Resposta Correta!!!"
+        document.getElementById('perguntas').innerHTML = "<br><button class='botao_continuar' value='Continuar' onclick='continuar_essa_bosta()'>Continuar</button>"
+        document.getElementById('modal-container').style.display = "flex";
+        document.getElementById('modal').style.display = "flex";
+    }else{
+        document.getElementById('titulo_modal').innerHTML = "Resposta Errada!!!"
+        document.getElementById('perguntas').innerHTML = "<br><button class='botao_continuar' value='Continuar' onclick='continuar_essa_bosta()'>Continuar</button>"
+        document.getElementById('modal-container').style.display = "flex";
+        document.getElementById('modal').style.display = "flex";
+    }
+}
 
 function empate(){
 
@@ -214,6 +241,11 @@ function pergunta_aleatoria(indice){
     document.getElementById('modal-container').style.display = "none";
     document.getElementById('modal').style.display = "none";
     document.getElementById('pergunta_aleatoria').reset();
+    if (pode_jogar == true){
+        explicacao('aleatorias', indice, 'certo')
+    }else{
+        explicacao('aleatorias', indice, 'errado')
+    }
 };
 
 function pergunta(personagem, indice){
@@ -224,17 +256,29 @@ function pergunta(personagem, indice){
             if (vez[0] == 'user2_nome'){
                 jogador1[1] -= 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'maria_antonieta'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }else{
                 jogador2[1] -= 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'maria_antonieta'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }
         }else{
             if (vez[0] == 'user2_nome'){
                 jogador1[2] += 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'maria_antonieta'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }else{
                 jogador2[2] += 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'maria_antonieta'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }
         }
     }else if (personagem == "danton"){
@@ -242,17 +286,29 @@ function pergunta(personagem, indice){
             if (vez[0] == 'user2_nome'){
                 jogador1[1] -= 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'danton'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }else{
                 jogador2[1] -= 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'danton'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }
         }else{
             if (vez[0] == 'user2_nome'){
                 jogador1[2] += 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'danton'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }else{
                 jogador2[2] += 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'danton'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }
         }
     }else if (personagem == "napoleao"){
@@ -260,17 +316,29 @@ function pergunta(personagem, indice){
             if (vez[0] == 'user2_nome'){
                 jogador1[1] -= 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'napoleao'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }else{
                 jogador2[1] -= 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'napoleao'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }
         }else{
             if (vez[0] == 'user2_nome'){
                 jogador1[2] += 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'napoleao'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }else{
                 jogador2[2] += 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'napoleao'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }
         }
     }else if (personagem == "robespierre"){
@@ -278,17 +346,29 @@ function pergunta(personagem, indice){
             if (vez[0] == 'user2_nome'){
                 jogador1[1] -= 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'robespierre'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }else{
                 jogador2[1] -= 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'robespierre'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }
         }else{
             if (vez[0] == 'user2_nome'){
                 jogador1[2] += 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'robespierre'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }else{
                 jogador2[2] += 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'robespierre'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }
         }
     }else if (personagem == "rei_luis_xvi"){
@@ -296,17 +376,29 @@ function pergunta(personagem, indice){
             if (vez[0] == 'user2_nome'){
                 jogador1[1] -= 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'rei_luis_xvi'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }else{
                 jogador2[1] -= 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'rei_luis_xvi'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }
         }else{
             if (vez[0] == 'user2_nome'){
                 jogador1[2] += 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'rei_luis_xvi'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }else{
                 jogador2[2] += 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'rei_luis_xvi'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }
         }
     }else if (personagem == "olympe"){
@@ -314,17 +406,29 @@ function pergunta(personagem, indice){
             if (vez[0] == 'user2_nome'){
                 jogador1[1] -= 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'olympe'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }else{
                 jogador2[1] -= 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'olympe'
+                indice_explicacao = indice
+                status_explicacao = 'errado'
             }
         }else{
             if (vez[0] == 'user2_nome'){
                 jogador1[2] += 1;
                 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
+                personagem_explicacao = 'olympe'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }else{
                 jogador2[2] += 1;
                 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
+                personagem_explicacao = 'olympe'
+                indice_explicacao = indice
+                status_explicacao = 'certo'
             }
         }
     }
@@ -341,10 +445,8 @@ function pergunta(personagem, indice){
     };
     document.getElementById('modal-container').style.display = "none";
     document.getElementById('modal').style.display = "none";
-    if (var_empate == true){
-        empate();
-    }
     document.getElementById('pergunta_aleatoria').reset();
+    explicacao(personagem_explicacao, indice_explicacao, status_explicacao)
 }
 
 
@@ -864,3 +966,4 @@ function jogar(identificador){
             document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
         };
 };
+
