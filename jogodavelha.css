@@ -7,20 +7,6 @@ body{
 h1{
     color: #5D0C1D;
 }
-.botao_continuar{
-    text-transform: uppercase;
-    font-weight: 300;
-    background: #5D0C1D;
-    color: #DDD9CE;
-    width: 10rem;
-    height: 2.25rem;
-    border: none;
-    border-radius: 2px;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    bottom: 80px;
-}
 
 /* -------------------- Jogador um ---------------------- */
 .jogador-um{
@@ -79,7 +65,7 @@ h1{
 /* -------------------- Posição do jogo ------------------- */
 .jogo{
     position: relative;
-    right: 18%;
+    right: 12%;
     bottom: 230px;
 }
 
@@ -149,6 +135,25 @@ h1{
 .mostrar .modal{
     animation: modaal .3s;
 }
+.botao_continuar{
+    text-transform: uppercase;
+    font-weight: 300;
+    background: #5D0C1D;
+    color: #DDD9CE;
+    width: 10rem;
+    height: 2.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    bottom: 80px;
+}
+.botao_continuar:hover{
+    background-color: #741127;
+    transition: .3s;
+}
+
 
 /* ------------- BARRA DE NAVEGAÇÃO  ------------- */
 header {
