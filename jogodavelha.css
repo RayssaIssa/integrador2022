@@ -274,3 +274,69 @@ header {
     margin-left:50px;
     margin-top:50px;
 }
+
+/* ------------------- Modal de ajuda ---------------------------*/
+.conteiner-ajuda{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-ajuda.mostre{
+    display: flex;
+}
+.ajuda{
+    border-radius: 15px;
+    padding: 2% 5%;
+    margin: 4% 20% 5% 20%;
+    border: 10px double #9A825F;
+    background-color: #741127;
+    font-family: acumin-pro, system-ui, sans-serif;
+    color: #FFF;
+    font-size: 17px;
+    width: 50%;
+    min-width: 300px;
+    position: relative;
+}
+.fechar{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #9A825F;
+    border-radius: 100%;
+    background: #741127;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 1.4em;
+}
+.fechar:hover{
+    background-color: #812c3f;
+    transition: .2s;
+}
+@keyframes modal-help{
+    from {
+        opacity: 0;
+        transform: translate3d(0px, -60px, 0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+.mostre .ajuda{
+    animation: modal-help .4s;
+}
+.tutorial h3{
+    font-size: 20px;
+}
+.tutorial li{
+    margin-top: 1%;
+}
