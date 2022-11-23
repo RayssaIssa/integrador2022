@@ -1,3 +1,16 @@
+/*----------------- Modal de Ajuda ---------------------*/
+function iniciar(modalhelpID) {
+    const help = document.getElementById(modalhelpID);
+    help.classList.add("mostre");
+    help.addEventListener('click', (e) => {
+    if (e.target.id == 'remova') {
+        help.classList.remove('mostre');
+    }
+    });
+}
+const text = document.querySelector('.hi');
+text.addEventListener('click', () => iniciar('modal-ajuda'));
+
 /*-----------------------------------------------------*/
 /*-------------PERGUNTAS E RESPOSTAS-------------------*/
 /*-----------------------------------------------------*/
