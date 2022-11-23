@@ -94,10 +94,10 @@ const respostas_olympe = [
 ]
 
 const perguntas_gerais = [
-    "<i>A Declaração dos Direitos do Homem e do Cidadão foi aprovada pela Assembleia em 26 de Agosto de 1789, onde assegurava os princípios da liberdade, da igualdade, da fraternidade (“Liberté, égalité, fraternité” - lema da Revolução), além do direito à propriedade. A Constituição ficou pronta em setembro de 1791. Quais das alternativas a seguir esta correta de acordo com o artigo:</i><br><br><input onclick=\"pergunta_aleatoria(0)\" name='resposta' type='radio' value='a'> Foi abolida a escravidão nas colônias<br><input onclick=\"pergunta_aleatoria(0)\" name='resposta' type='radio' value='b'> O governo foi transformado em monarquia absolutista<br><input onclick=\"pergunta_aleatoria(0)\" name='resposta' type='radio' value='c'> O poder executivo caberia ao rei, limitado pelo legislativo, constituído pela Assembleia",
+    "<i>A Declaração dos Direitos do Homem e do Cidadão foi aprovada pela Assembleia em 26 de Agosto de 1789, onde assegurava os princípios da liberdade, da igualdade, da fraternidade (“Liberté, égalité, fraternité” - lema da Revolução), além do direito à propriedade. A Constituição ficou pronta em setembro de 1791. Quais das alternativas a seguir esta correta de acordo com o artigo:</i><br><br><input onclick=\"pergunta_aleatoria(0)\" name='resposta' type='radio' value='a'> Foi abolida a escravidão nas colônias<br><input onclick=\"pergunta_aleatoria(0)\" name='resposta' type='radio' value='b'> O poder executivo caberia ao rei, limitado pelo legislativo, constituído pela Assembleia <br><input onclick=\"pergunta_aleatoria(0)\" name='resposta' type='radio' value='c'>O governo foi transformado em monarquia absolutista",
     "<i>A Revolução Francesa e as mudanças colocadas em prática com a queda do absolutismo naquele país foram influenciadas pelo?</i><br><br><input onclick=\"pergunta_aleatoria(1)\" name='resposta' type='radio' value='a'> Anarquismo<br><input onclick=\"pergunta_aleatoria(1)\" name='resposta' type='radio' value='b'> Socialismo<br><input onclick=\"pergunta_aleatoria(1)\" name='resposta' type='radio' value='c'> Iluminismo",
     "<i>A sociedade francesa possuía três divisões de estados, no qual um deles pressionava para que as votações das leis fossem individuais e não por Estado. Fazendo com que, essa divisão procurasse meios que favorecessem eles no sistema. Qual é o estado e o classe dos indivíduos ali inseridos?</i><br><br><input onclick=\"pergunta_aleatoria(2)\" name='resposta' type='radio' value='a'> Primeiro estado, composto pela nobreza<br><input onclick=\"pergunta_aleatoria(2)\" name='resposta' type='radio' value='b'> Segundo estado, formado pelo alto clero<br><input onclick=\"pergunta_aleatoria(2)\" name='resposta' type='radio' value='c'> Terceiro estado, composto pela burguesia",
-    "<i>Dentro do período da Convenção Nacional existe um ano extremamente violento, onde as pessoas suspeitas de serem contrarrevolucionárias eram condenadas à guilhotina. Isto foi possível pela aprovação da Lei dos Suspeitos que autorizava a prisão e morte dos considerados antirrevolucionários. Nessa mesma altura, as igrejas eram encerradas e os religiosos obrigados a deixar seus conventos. Aqueles que recusavam a jurar a Constituição Civil do Clero eram executados. Além da guilhotina, os suspeitos eram afogados no Rio Loire. Essa fase anterior ao Diretório ficou conhecida como:</i><br><br><input onclick=\"pergunta_aleatoria(3)\" name='resposta' type='radio' value='a'> O Terror<br><input onclick=\"pergunta_aleatoria(3)\" name='resposta' type='radio' value='b'> Assembleia Nacional Constituinte<br><input onclick=\"pergunta_aleatoria(3)\" name='resposta' type='radio' value='c'> Consulado",
+    "<i>Dentro do período da Convenção Nacional existe um ano extremamente violento, onde as pessoas suspeitas de serem contrarrevolucionárias eram condenadas à guilhotina. Isto foi possível pela aprovação da Lei dos Suspeitos que autorizava a prisão e morte dos considerados antirrevolucionários. Nessa mesma altura, as igrejas eram encerradas e os religiosos obrigados a deixar seus conventos. Aqueles que recusavam a jurar a Constituição Civil do Clero eram executados. Além da guilhotina, os suspeitos eram afogados no Rio Loire. Essa fase anterior ao Diretório ficou conhecida como:</i><br><br><input onclick=\"pergunta_aleatoria(3)\" name='resposta' type='radio' value='a'> Assembleia Nacional Constituinte<br><input onclick=\"pergunta_aleatoria(3)\" name='resposta' type='radio' value='b'> O Terror<br><input onclick=\"pergunta_aleatoria(3)\" name='resposta' type='radio' value='c'> Consulado",
     "<i>Apos assinar a carta que leva o rei a guilhotina, os jacobinos usam a intimidação e a coordenação a morte para continuarem no poder. Esse período ficou conhecido como:</i><br><br><input onclick=\"pergunta_aleatoria(4)\" name='resposta' type='radio' value='a'> Período de terror<br><input onclick=\"pergunta_aleatoria(4)\" name='resposta' type='radio' value='b'> Período da salvação<br><input onclick=\"pergunta_aleatoria(4)\" name='resposta' type='radio' value='c'> Período da revolucao monárquica",
     "<i>A Assembléia dos Notáveis aconteceu no ano de 1787.Na reunião estavam presentes:</i><br><br><input onclick=\"pergunta_aleatoria(5)\" name='resposta' type='radio' value='a'> Representantes do 1º e do 3º Estados<br><input onclick=\"pergunta_aleatoria(5)\" name='resposta' type='radio' value='b'> O Rei e os representantes do 1º Estado<br><input onclick=\"pergunta_aleatoria(5)\" name='resposta' type='radio' value='c'> O rei e os representantes do 1º e 2º estados",
     "<i>1792 foi o ano em que a monarquia foi abolida na França.</i><br><br><input onclick=\"pergunta_aleatoria(6)\" name='resposta' type='radio' value='a'> Verdadeiro<br><input onclick=\"pergunta_aleatoria(6)\" name='resposta' type='radio' value='b'> Falso",
@@ -105,11 +105,11 @@ const perguntas_gerais = [
 ]
 
 const respostas_gerais = [
-    "c", "c", "c", "a", "a", "c", "a", "b"
+    "b", "c", "c", "b", "a", "c", "a", "b"
 ]
 
-var jogador1 = [localStorage.getItem('user1_nome'), 6, 0, localStorage.getItem('personagem_jogador1')];
-var jogador2 = [localStorage.getItem('user2_nome'), 6, 0, localStorage.getItem('personagem_jogador2')];
+var jogador1 = [localStorage.getItem('user1_nome'), 3, 0, localStorage.getItem('personagem_jogador1')];
+var jogador2 = [localStorage.getItem('user2_nome'), 3, 0, localStorage.getItem('personagem_jogador2')];
 
 document.getElementById('nome_usuario1').innerHTML = localStorage.getItem('user1_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador1[1] + "<br>" + " ACERTOS: " + jogador1[2];
 document.getElementById('nome_usuario2').innerHTML = localStorage.getItem('user2_nome').toUpperCase() + "<br>" + " VIDAS: " + jogador2[1] + "<br>" + " ACERTOS: " + jogador2[2];
@@ -131,6 +131,7 @@ var status_explicacao
 
 jogadas_para_pergunta = Math.floor(Math.random() * 4) *2;
 var paridade = '';
+permitido = false;
 
 document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
 
@@ -485,10 +486,35 @@ function jogar(identificador){
 
         
         if (pode_jogar == true){
+            
             if (vez[0] == 'user1_nome'){
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='coroa.png' width='200px' height='120px' margin-left='50px' margin-top='50px'></img>";
+                if (jogador1[3] == 'napoleao'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_napoelao' src='icone-napoleao.png' width='175px' height='175px' margin-left='200px' padding-top='50px'></img>";
+                }else if (jogador1[3] == 'danton'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_danton' src='icone-danton.png'></img>";
+                }else if(jogador1[3] == 'robespierre'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_robespierre' src='icone-robespierre.png'></img>";
+                }else if(jogador1[3] == 'olympe'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_olympe' src='icone-olympe.png'></img>";
+                }else if(jogador1[3] == 'rei_luis_xvi'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_rei' src='icone-rei.png'></img>";
+                }else if(jogador1[3] == 'maria_antonieta'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_rainha' src='icone-rainha.png'></img>";
+                }
             }else{
-                document.getElementById(identificador).innerHTML = "<img class='imagem' src='pao.png' width='200px' height='120px' margin-left='50px' margin-top='50px'></img>";
+                if (jogador2[3] == 'napoleao'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_napoelao' src='icone-napoleao.png' width='175px' height='175px' margin-left='200px' padding-top='50px'></img>";
+                }else if (jogador2[3] == 'danton'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_danton' src='icone-danton.png'></img>";
+                }else if(jogador2[3] == 'robespierre'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_robespierre' src='icone-robespierre.png'></img>";
+                }else if(jogador2[3] == 'olympe'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_olympe' src='icone-olympe.png'></img>";
+                }else if(jogador2[3] == 'rei_luis_xvi'){
+                        document.getElementById(identificador).innerHTML = "<img class='icone_rei' src='icone-rei.png'></img>";
+                }else if(jogador2[3] == 'maria_antonieta'){
+                    document.getElementById(identificador).innerHTML = "<img class='icone_rainha' src='icone-rainha.png'></img>";
+                }
             };
             
         
@@ -511,9 +537,11 @@ function jogar(identificador){
             }else if (identificador == "ID"){
                 matriz_jogo[8] = vez[0];
             };
-        }
+        };
+        permitido = true;
     }else{
         alert("Erro: Essa casa já está ocupada")
+        permitido = false;
     };
 
         if ((matriz_jogo[0] != '') && (matriz_jogo[1] != '') && (matriz_jogo[2]!= '') && (matriz_jogo[0] == matriz_jogo[1]) && (matriz_jogo[1]== matriz_jogo[2])){
@@ -971,12 +999,13 @@ function jogar(identificador){
             document.getElementById("ID").innerHTML = "";
         };
         console.log(matriz_jogo);
-        if (vez[0] == "user2_nome"){
-            vez[0] = "user1_nome";
-            document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
-        }else{
-            vez[0] = "user2_nome";
-            document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
+        if (permitido == true){
+            if (vez[0] == "user2_nome"){
+                vez[0] = "user1_nome";
+                document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
+            }else{
+                vez[0] = "user2_nome";
+                document.getElementById('texto_de_vez').innerHTML = "Vez de " + localStorage.getItem(vez[0]).toUpperCase();
+            };
         };
 };
-
