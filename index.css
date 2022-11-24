@@ -11,6 +11,9 @@
 h1, h2, h3, h4{
 align-items: center;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* -------------------- Página do vencedor --------------------*/
 .vencedor{
   padding: 5% 8%;
