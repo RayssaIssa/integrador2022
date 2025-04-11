@@ -2,10 +2,13 @@
 
 Feito em conjunto com as disciplinas de **História** e **Desenvolvimento Web** no IF Goiano - Campus Ceres 
 
+<img src="https://github.com/user-attachments/assets/7dca3684-20a7-4e29-9309-370bc051293b">
+
+
 ## Objetivo
 A proposta do projeto foi desenvolver um jogo que ajudasse os alunos no estudo do conteúdo de "Revolução Francesa" e colocasse os conceito e habilidades de programção aprendido em prática.
 
-No jogo, ao iniciar o usuário pode escolher seu nome a ser exibido em suas jogadas e seu avatar, suas opções são seis personagens importantes da revolução francesa, é importante escolher com atenção pois a escolha dos personagens vai determinar parte das perguntas que irão aparecer ao longo do jogo, e também cada personagem possui um símbolo que será usado em suas jogadas no jogo da velha, ao invés do X e O caracteristicos do jogo.
+No jogo Guilhotinados, ao iniciar o usuário pode escolher seu nome a ser exibido em suas jogadas e seu avatar, suas opções são seis personagens importantes da revolução francesa, é importante escolher com atenção pois a escolha dos personagens vai determinar parte das perguntas que irão aparecer ao longo do jogo, e também cada personagem possui um símbolo que será usado em suas jogadas no jogo da velha, ao invés do X e O caracteristicos do jogo.
 
 ## Regras do jogo
 1. O jogador da esquerda é o primeiro a jogar, os simbolos usados nas marcações das jogadas irão variar de acordo com o personagem escolhido.
